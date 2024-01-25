@@ -16,6 +16,12 @@ module.exports = {
       }
     },
     extend: {
+      backgroundImage: {
+        home: "url('/background/blue-wave-bg.svg')"
+      },
+      fontFamily: {
+        montserrat: "Montserrat', sans-serif"
+      },
       colors: {
         navbarBackground: "#F8FAFF",
         yellowButton: "#FFB003",

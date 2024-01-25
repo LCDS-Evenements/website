@@ -1,8 +1,11 @@
 import type { ReactElement } from "react";
+import Home from "@/lib/sections/home.section";
 
 const MainPage = (): ReactElement => {
   return (
-    <div>Hello world</div>
+    <main>
+      <Home />
+    </main>
   );
 };
 

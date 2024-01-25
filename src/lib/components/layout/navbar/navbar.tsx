@@ -1,7 +1,7 @@
 import type { ReactElement } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Button } from "../../ui/buttton";
+import { Button } from "@/lib/components/ui/button";
 
 export const Navbar = (): ReactElement => {
   return (
