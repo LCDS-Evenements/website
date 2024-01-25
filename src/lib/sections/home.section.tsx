@@ -10,7 +10,7 @@ const Home = (): ReactElement => {
           src={"./illustration/illustration.svg"}
           height={150}
           width={150}
-          className="w-[90%] h-[94%]"
+          className="w-[90%] h-[94%] pointer-events-none"
           alt="Ensemble d'illustrations représentant le style graphique du festival CuicuiteDays"
         />
         <div className="flex items-center justify-center flex-col fixed top-[75%] gap-3">
@@ -20,7 +20,7 @@ const Home = (): ReactElement => {
           >
             RÉSERVEZ DÈS MAINTENANT SUR NOTRE BILLETTERIE !
           </h4>
-          <Button text={"Prenez-vos palces !"} />
+          <Button variant="hoverYellow" text={"Prenez-vos places !"} />
         </div>
       </div>
     </section>
