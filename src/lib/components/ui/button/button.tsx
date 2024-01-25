@@ -9,7 +9,8 @@ export const buttonVariants = cva(
     variants: {
       variant: {
         default: "bg-yellowButton text-buttonText",
-        hoverYellow: "bg-yellowButton hover:scale-110"
+        hoverScaleYellow: "bg-yellowButton hover:scale-110",
+        hoverSimpleYellow: "bg-yellowButton hover:bg-yellowButton/80"
       },
       size: {
         default: " px-5 py-2 text-xl"

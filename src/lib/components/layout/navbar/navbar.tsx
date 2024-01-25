@@ -17,7 +17,7 @@ export const Navbar = (): ReactElement => {
           <Link className="text-xl" href="/">Notre histoire</Link>
           <Link className="text-xl" href="/">F.A.Q</Link>
         </div>
-        <Button text="Billetterie" />
+        <Button variant="hoverSimpleYellow" text="Billetterie" />
       </div>
     </nav>
   );

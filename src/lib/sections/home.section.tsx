@@ -20,7 +20,7 @@ const Home = (): ReactElement => {
           >
             RÉSERVEZ DÈS MAINTENANT SUR NOTRE BILLETTERIE !
           </h4>
-          <Button variant="hoverYellow" text={"Prenez-vos places !"} />
+          <Button variant="hoverScaleYellow" text={"Prenez-vos places !"} />
         </div>
       </div>
     </section>
