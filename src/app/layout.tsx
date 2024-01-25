@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import type { Component } from "@/lib/utils/component";
 import type { PropsWithChildren } from "react";
 import { cn } from "@/lib/utils";
+import localFont from "next/font/local";
+import { Navbar } from "@/lib/components/layout/navbar";
 
-const inter = Inter({ subsets: ["latin"] });
+const magicRetro = localFont({ src: "../../public/font/Magic Retro.woff2" });
 
 export const metadata: Metadata = {
   title: "NextJS - Template",
@@ -15,7 +16,10 @@ export const metadata: Metadata = {
 const RootLayout: Component<PropsWithChildren> = ({ children }) => {
   return (
     <html lang="en">
-      <body className={cn(inter.className)}>{children}</body>
+      <body className={cn(magicRetro.className, "bg-black")}>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 };
