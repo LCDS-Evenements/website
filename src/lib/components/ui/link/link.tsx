@@ -5,8 +5,8 @@ import Image from "next/image";
 
 export const NextLink: Component<Props> = ({ href, text }) => {
   return (
-    <div>
-      <Link className="text-xl" href={href}>
+    <div className="group w-fit h-fit relative">
+      <Link className="text-xl z-50 relative" href={href}>
         {text}
       </Link>
       <Image
@@ -14,7 +14,7 @@ export const NextLink: Component<Props> = ({ href, text }) => {
         alt="Guirlande de fleur qui apparait sous le lien cliquable quand on passe la souris sur le lien"
         width={50}
         height={50}
-        className="w-full max-h-fit"
+        className="w-full h-7 absolute -bottom-6 opacity-0 z-20 group-hover:opacity-100 group-hover:-translate-y-5 transition-all duration-500"
       />
     </div>
   );
