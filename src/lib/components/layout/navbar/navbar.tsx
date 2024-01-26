@@ -4,7 +4,7 @@
 import { useEffect, type ReactElement, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Button } from "@/lib/components/ui/button";
+import { ButtonLink } from "@/lib/components/ui/button-link";
 import { cn } from "@/lib/utils";
 
 export const Navbar = (): ReactElement => {
@@ -52,7 +52,7 @@ export const Navbar = (): ReactElement => {
           <Link className="text-xl" href="/">Notre histoire</Link>
           <Link className="text-xl" href="/">F.A.Q</Link>
         </div>
-        <Button variant="hoverSimpleYellow" text="Billetterie" />
+        <ButtonLink href="" variant="hoverSimpleYellow" text="Billetterie" />
       </div>
     </nav>
   );
