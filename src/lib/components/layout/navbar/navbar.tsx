@@ -16,7 +16,7 @@ export const Navbar = (): ReactElement => {
       const documentHeight = document.documentElement.scrollHeight;
       const scrollPosition = window.scrollY;
 
-      const scrollThreshold = (documentHeight - windowHeight) / 2;
+      const scrollThreshold = (documentHeight - windowHeight) / 4;
 
       if (scrollPosition >= scrollThreshold) {
         setOpacity("opacity-80");

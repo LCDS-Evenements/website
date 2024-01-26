@@ -8,21 +8,19 @@ export const ScrollToTop = (): ReactElement => {
   const [rotation, setRotation] = useState<string>("");
 
   useEffect(() => {
-    setRotation("-rotate-90");
-
     const handleScroll = (): void => {
       const windowHeight = window.innerHeight;
       const documentHeight = document.documentElement.scrollHeight;
       const scrollPosition = window.scrollY;
 
-      const scrollThreshold = (documentHeight - windowHeight) / 2;
+      const scrollThreshold = (documentHeight - windowHeight) / 4;
 
       if (scrollPosition >= scrollThreshold) {
-        setRotation("rotate-90");
+        setRotation("rotate-[60deg]");
       }
 
       if (scrollPosition < scrollThreshold) {
-        setRotation("-rotate-45");
+        setRotation("rotate-0");
       }
     };
 
@@ -41,11 +39,11 @@ export const ScrollToTop = (): ReactElement => {
   };
 
   return (
-    <button onClick={handleClick} className="rounded-full bg-yellowButton flex items-center justify-center fixed bottom-12 right-20 z-50">
+    <button onClick={handleClick} className="rounded-full bg-yellowButton flex items-center justify-center fixed bottom-12 right-20 z-50 p-2">
       <Image
         src={"./illustration/bird.svg"}
-        height={70}
-        width={70}
+        height={50}
+        width={50}
         alt="Oiseau qui pointe vers le haut pour pouvoir remonter tout en haut de la page"
         className={cn(rotation, "transition duration-500 ease-in-out transform")}
       />
