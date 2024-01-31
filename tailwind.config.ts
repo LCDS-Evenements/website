@@ -17,7 +17,8 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        home: "url('/background/blue-wave-bg.svg')"
+        home: "url('/background/blue-wave-bg.svg')",
+        lineUp: "url('/background/bg-white-waves.svg')"
       },
       fontFamily: {
         montserrat: "Montserrat', sans-serif"

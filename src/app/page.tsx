@@ -1,12 +1,12 @@
 import type { ReactElement } from "react";
 import Home from "@/lib/sections/home.section";
-import Test from "@/lib/sections/test.section";
+import LineUp from "@/lib/sections/line-up.section";
 
 const MainPage = (): ReactElement => {
   return (
     <main>
       <Home />
-      <Test />
+      <LineUp />
     </main>
   );
 };
