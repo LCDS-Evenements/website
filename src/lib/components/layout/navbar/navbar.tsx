@@ -36,9 +36,10 @@ export const Navbar = (): ReactElement => {
 
   return (
     <nav
+      style={{ boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)" }}
       className={
         cn(
-          "bg-navbarBackground h-[60px] w-[96%] rounded-[50px] shadow fixed top-8 left-1/2 -translate-x-1/2 flex items-center justify-center z-50 transition-all duration-300",
+          "bg-navbarBackground h-[60px] w-[96%] rounded-[50px] fixed top-8 left-1/2 -translate-x-1/2 flex items-center justify-center z-50 transition-all duration-300",
           opacity,
           "hover:opacity-100"
         )
