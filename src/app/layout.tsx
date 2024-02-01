@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 const RootLayout: Component<PropsWithChildren> = ({ children }) => {
   return (
     <html lang="en">
-      <body className={cn(magicRetro.className, "bg-black overflow-x-hidden")}>
+      <body className={cn(magicRetro.className, "bg-bodyBackground overflow-x-hidden")}>
         <Navbar />
         <ScrollToTop />
         {children}

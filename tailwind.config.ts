@@ -17,12 +17,14 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        home: "url('/background/blue-wave-bg.svg')"
+        home: "url('/background/blue-wave-bg.svg')",
+        lineup: "url('/background/white-wave-bg.svg')"
       },
       fontFamily: {
         montserrat: "Montserrat', sans-serif"
       },
       colors: {
+        bodyBackground: "#F9FAFF",
         navbarBackground: "#F8FAFF",
         yellowButton: "#FFB003",
         buttonText: "#1B2237",
