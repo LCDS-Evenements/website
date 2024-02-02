@@ -71,7 +71,13 @@ export const ArtistCard: Component<Props> = ({
           style={{ fontFamily: "Montserrat, sans-serif" }}
           className="text-sm w-full text-bodyBackground max-h-32 overflow-y-scroll no-scrollbar mb-6"
         >
-          {bio}
+          {bio.map((paragraph, idx) => (
+            <span key={idx}>
+              {paragraph}
+              <br />
+              <br />
+            </span>
+          ))}
         </p>
         <div className="w-full flex items-center gap-4">
           {spotifyUrl && (
