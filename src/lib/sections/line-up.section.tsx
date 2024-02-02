@@ -1,11 +1,27 @@
 /* eslint-disable max-len */
+"use client";
+
 import type { ReactElement } from "react";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Selector } from "../components/ui/selector";
+import type { Artist } from "@/config/artists.config";
 import { artists } from "@/config/artists.config";
 import { ArtistCard } from "../components/artist-card/artist-card";
+import { DaySelectorStore } from "../stores/day-selector-store";
 
 const LineUp = (): ReactElement => {
+  const selectedDay = DaySelectorStore((state) => state.selectedDay);
+  const [artistsList, setArtistsList] = useState<Artist[]>([]);
+
+  useEffect(() => {
+    console.log(selectedDay);
+    if (selectedDay === "TOUS") {
+      setArtistsList(artists);
+    } else {
+      setArtistsList(artists.filter((artist) => artist.day === selectedDay));
+    }
+  }, [selectedDay]);
+
   return (
     <section className="w-screen min-h-dvh bg-lineup bg-no-repeat bg-cover bg-center px-60 py-28">
       <h2 className="text-center text-5xl text-blue mb-16">LINE UP</h2>
@@ -16,7 +32,7 @@ const LineUp = (): ReactElement => {
           <Selector text="SAMEDI" />
         </div>
         <div className="w-full h-fit grid grid-cols-3 gap-8">
-          {artists.map((artist, idx) => (
+          {artistsList.map((artist, idx) => (
             <ArtistCard
               key={idx}
               name={artist.name}

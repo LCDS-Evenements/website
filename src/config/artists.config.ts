@@ -4,7 +4,7 @@ export type Artist = {
   imagePath: string;
   bio: string[];
   presenceDate: string;
-  day: 1 | 2;
+  day: string;
   spotifyUrl?: string;
   instagramUrl?: string;
   facebookUrl?: string;
@@ -23,7 +23,7 @@ export const artists: Artist[] = [
       "Aujourd’hui l’artiste a acquis le statut d’un DJ-Producteur confirmé qui se distingue grâce à ses sorties musicales sur les plateformes de streaming cumulant des dizaines de milliers d’écoutes. Avec un style électro-pop fédérateur et un show live électronique, il fait partie des jeunes artistes à suivre. 🪩"
     ],
     presenceDate: "Vendredi 7 Juin",
-    day: 1,
+    day: "VENDREDI",
     spotifyUrl: "https://open.spotify.com/intl-fr/artist/42MNWxMfJgu8i7GZHBR0e4?_authfailed=1",
     instagramUrl: "https://www.instagram.com/luciendahais/",
     facebookUrl: "https://www.facebook.com/dahaislucien/?locale=fr_FR",
@@ -39,7 +39,7 @@ export const artists: Artist[] = [
       "Attirée par la rave, l’hardstyle et l’acide, elle saura mettre tout le monde d’accord. 🌟"
     ],
     presenceDate: "Samedi 8 Juin",
-    day: 2,
+    day: "SAMEDI",
     instagramUrl: "https://www.instagram.com/emira.thlt/?img_index=1"
   },
   {
@@ -52,7 +52,7 @@ export const artists: Artist[] = [
       "Leur voyage musical vous emmènera dans un univers envoûtant, oscillant entre des sonorités Tech House et Bass House pointues. 🎶"
     ],
     presenceDate: "Samedi 8 Juin",
-    day: 2,
+    day: "SAMEDI",
     instagramUrl: "https://www.instagram.com/humainmusic/?img_index=1",
     spotifyUrl: "https://open.spotify.com/intl-fr/artist/1MN6t4NUBQaUCWnOElk4op"
   },
@@ -65,7 +65,7 @@ export const artists: Artist[] = [
       "Après plus de 100 concerts et quelques 30000 kms parcourus, Cutting Corners repart en tournée en 2024 et dévoile son nouveau single « i’m OK ». 🎶"
     ],
     presenceDate: "Vendredi 7 Juin",
-    day: 1
+    day: "VENDREDI"
   },
   {
     name: "Alice April",
@@ -75,7 +75,7 @@ export const artists: Artist[] = [
       "Grâce à son talent et à sa détermination, Alice April a réussi à se faire remarquer sur la scène musicale, où elle a rapidement gagné en popularité. Ses performances énergiques et ses mix lui ont valu une base de fans fidèles qui ne manquent jamais une occasion de venir la voir en live. 🪩"
     ],
     presenceDate: "Samedi 8 Juin",
-    day: 2
+    day: "SAMEDI"
   },
   {
     name: "Boostee",
@@ -87,14 +87,14 @@ export const artists: Artist[] = [
       "Boostee présente son quatrième album, Addenda. Sorti le 19 mai 2023, c’est aux yeux de l’artiste un album particulier puisqu’il retrace en quinze titres une relation intense et puissante. Intime et énergique, ce nouvel opus est largement dominé par une sonorité pop et positive. Porté par les singles « S’attacher » et « Faux Départ » qui comptabilisent plus de 5 millions d’écoutes sur les différentes plateformes, Boostee nous prouve, l’amour et l’attachement que sa communauté lui porte. ✨"
     ],
     presenceDate: "Samedi 8 Juin",
-    day: 2
+    day: "SAMEDI"
   },
   {
     name: "Grayssoker",
     imagePath: "./artistes/grayssoker.svg",
     bio: ["placeholder"],
     presenceDate: "Vendredi 7 Juin",
-    day: 1
+    day: "VENDREDI"
   },
   {
     name: "Michel Mercury",
@@ -104,6 +104,6 @@ export const artists: Artist[] = [
       "La seule limite de Michel est bien au delà du ciel... Son passage au Metal Corner de l'édition du siècle Hellfest 2022 a transformé la vie de ses 4000 spectateurs à tout jamais. A son actif, plus de 100 slams sur Céline Dion... De bar en bar, de festival en festival, Michel s'apprête désormais à embraser les Cuicuite Days comme il se doit ! 🪩"
     ],
     presenceDate: "Vendredi 7 Juin",
-    day: 1
+    day: "VENDREDI"
   }
 ];
