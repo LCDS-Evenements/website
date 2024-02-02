@@ -19,7 +19,8 @@ export const artists: Artist[] = [
     imagePath: "./artistes/lucien-dahais.svg",
     bio: "Lucien dahais est un jeune artiste français qui se produit au niveau de la région parisienne. Il est un artiste complet, il chante, danse et joue de la guitare. Il a sorti son premier single en 2019 et prépare actuellement son premier album. Il a déjà fait la première partie de plusieurs artistes connus. Il a également participé à plusieurs concours de chant et a été finaliste de l'émission The Voice. Il a également participé à plusieurs concours de chant et a été finaliste de l'émission The Voice. Il a également participé à plusieurs concours de chant et a été finaliste de l'émission The Voice.",
     presenceDate: "Vendredi 7 Juin",
-    day: 1
+    day: 1,
+    spotifyUrl: "https://open.spotify.com/artist/5v6"
   },
   {
     name: "Emira",

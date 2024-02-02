@@ -12,8 +12,19 @@ import Soundcloud from "../icons/soundcloud";
 import Instagram from "../icons/instagram";
 import Facebook from "../icons/facebook";
 import Twitter from "../icons/twitter";
+import Link from "next/link";
 
-export const ArtistCard: Component<Props> = ({ name, bio, imagePath }) => {
+export const ArtistCard: Component<Props> = ({
+  name,
+  bio,
+  imagePath,
+  spotifyUrl,
+  youtubeUrl,
+  facebookUrl,
+  instagramUrl,
+  soundcloudUrl,
+  twitterUrl
+}) => {
   const wrapperRef = useRef<HTMLDivElement>(null);
   const infoRef = useRef<HTMLDivElement>(null);
 
@@ -63,12 +74,36 @@ export const ArtistCard: Component<Props> = ({ name, bio, imagePath }) => {
           {bio}
         </p>
         <div className="w-full flex items-center gap-4">
-          <Spotify className="text-bodyBackground" />
-          <Youtube className="text-bodyBackground" />
-          <Soundcloud className="text-bodyBackground" />
-          <Instagram className="text-bodyBackground" />
-          <Facebook className="text-bodyBackground" />
-          <Twitter className="text-bodyBackground" />
+          {spotifyUrl !== undefined && (
+            <Link href={spotifyUrl}>
+              <Spotify className="text-bodyBackground" />
+            </Link>
+          )}
+          {youtubeUrl && (
+            <Link href={youtubeUrl}>
+              <Youtube className="text-bodyBackground" />
+            </Link>
+          )}
+          {soundcloudUrl && (
+            <Link href={soundcloudUrl}>
+              <Soundcloud className="text-bodyBackground" />
+            </Link>
+          )}
+          {instagramUrl && (
+            <Link href={instagramUrl}>
+              <Instagram className="text-bodyBackground" />
+            </Link>
+          )}
+          {facebookUrl && (
+            <Link href={facebookUrl}>
+              <Facebook className="text-bodyBackground" />
+            </Link>
+          )}
+          {twitterUrl && (
+            <Link href={twitterUrl}>
+              <Twitter className="text-bodyBackground" />
+            </Link>
+          )}
         </div>
       </div>
     </div>
