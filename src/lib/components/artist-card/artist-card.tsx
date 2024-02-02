@@ -69,7 +69,7 @@ export const ArtistCard: Component<Props> = ({
         <h3 className="text-3xl text-bodyBackground tracking-wider mb-4">{name}</h3>
         <p
           style={{ fontFamily: "Montserrat, sans-serif" }}
-          className="text-sm w-full text-bodyBackground max-h-32 overflow-y-scroll no-scrollbar mb-6"
+          className="text-sm w-full text-bodyBackground max-h-40 overflow-y-scroll no-scrollbar mb-6"
         >
           {bio.map((paragraph, idx) => (
             <span key={idx}>
