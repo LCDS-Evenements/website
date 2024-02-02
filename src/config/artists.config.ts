@@ -24,7 +24,12 @@ export const artists: Artist[] = [
     ],
     presenceDate: "Vendredi 7 Juin",
     day: 1,
-    spotifyUrl: "https://open.spotify.com/artist/5v6"
+    spotifyUrl: "https://open.spotify.com/intl-fr/artist/42MNWxMfJgu8i7GZHBR0e4?_authfailed=1",
+    instagramUrl: "https://www.instagram.com/luciendahais/",
+    facebookUrl: "https://www.facebook.com/dahaislucien/?locale=fr_FR",
+    twitterUrl: "https://twitter.com/luciendahais",
+    youtubeUrl: "https://www.youtube.com/channel/UCPL9m82QdI_8lY-2fy7Md-w",
+    soundcloudUrl: "https://soundcloud.com/lucien-dahais"
   },
   {
     name: "Emira",
@@ -34,7 +39,8 @@ export const artists: Artist[] = [
       "Attirée par la rave, l’hardstyle et l’acide, elle saura mettre tout le monde d’accord. 🌟"
     ],
     presenceDate: "Samedi 8 Juin",
-    day: 2
+    day: 2,
+    instagramUrl: "https://www.instagram.com/emira.thlt/?img_index=1"
   },
   {
     name: "Humain",
@@ -46,7 +52,9 @@ export const artists: Artist[] = [
       "Leur voyage musical vous emmènera dans un univers envoûtant, oscillant entre des sonorités Tech House et Bass House pointues. 🎶"
     ],
     presenceDate: "Samedi 8 Juin",
-    day: 2
+    day: 2,
+    instagramUrl: "https://www.instagram.com/humainmusic/?img_index=1",
+    spotifyUrl: "https://open.spotify.com/intl-fr/artist/1MN6t4NUBQaUCWnOElk4op"
   },
   {
     name: "Cutting Corners",
