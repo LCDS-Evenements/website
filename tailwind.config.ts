@@ -18,7 +18,9 @@ module.exports = {
     extend: {
       backgroundImage: {
         home: "url('/background/blue-wave-bg.svg')",
-        lineup: "url('/background/white-wave-bg.svg')"
+        lineup: "url('/background/white-wave-bg.svg')",
+        beforeArtistCard: "linear-gradient(to top, transparent 46%, rgba(12, 13, 19, 0.5) 68%, rgba(12, 13, 19) 97%)",
+        afterArtistCard: "linear-gradient(to bottom, transparent 46%, rgba(12, 13, 19, 0.5) 68%, rgba(12, 13, 19) 97%)"
       },
       fontFamily: {
         montserrat: "Montserrat', sans-serif"
