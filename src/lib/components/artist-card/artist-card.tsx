@@ -74,7 +74,7 @@ export const ArtistCard: Component<Props> = ({
           {bio}
         </p>
         <div className="w-full flex items-center gap-4">
-          {spotifyUrl !== undefined && (
+          {spotifyUrl && (
             <Link href={spotifyUrl}>
               <Spotify className="text-bodyBackground" />
             </Link>

@@ -24,6 +24,12 @@ const LineUp = (): ReactElement => {
               day={artist.day}
               presenceDate={artist.presenceDate}
               imagePath={artist.imagePath}
+              spotifyUrl={artist.spotifyUrl}
+              youtubeUrl={artist.youtubeUrl}
+              soundcloudUrl={artist.soundcloudUrl}
+              instagramUrl={artist.instagramUrl}
+              facebookUrl={artist.facebookUrl}
+              twitterUrl={artist.twitterUrl}
             />
           ))}
         </div>
