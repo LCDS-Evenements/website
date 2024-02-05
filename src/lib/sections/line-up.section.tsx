@@ -46,6 +46,8 @@ const LineUp = (): ReactElement => {
               instagramUrl={artist.instagramUrl}
               facebookUrl={artist.facebookUrl}
               twitterUrl={artist.twitterUrl}
+              tiktokUrl={artist.tiktokUrl}
+              threadlUrl={artist.threadlUrl}
             />
           ))}
         </div>

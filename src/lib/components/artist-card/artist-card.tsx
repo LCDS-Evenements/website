@@ -13,6 +13,8 @@ import Instagram from "../icons/instagram";
 import Facebook from "../icons/facebook";
 import Twitter from "../icons/twitter";
 import Link from "next/link";
+import Tiktok from "../icons/tiktok";
+import Thread from "../icons/thread";
 
 export const ArtistCard: Component<Props> = ({
   name,
@@ -23,7 +25,9 @@ export const ArtistCard: Component<Props> = ({
   facebookUrl,
   instagramUrl,
   soundcloudUrl,
-  twitterUrl
+  twitterUrl,
+  tiktokUrl,
+  threadlUrl
 }) => {
   const wrapperRef = useRef<HTMLDivElement>(null);
   const infoRef = useRef<HTMLDivElement>(null);
@@ -108,6 +112,16 @@ export const ArtistCard: Component<Props> = ({
           {twitterUrl && (
             <Link href={twitterUrl}>
               <Twitter className="text-bodyBackground" />
+            </Link>
+          )}
+          {tiktokUrl && (
+            <Link href={tiktokUrl}>
+              <Tiktok className="text-bodyBackground" />
+            </Link>
+          )}
+          {threadlUrl && (
+            <Link href={threadlUrl}>
+              <Thread className="text-bodyBackground" />
             </Link>
           )}
         </div>

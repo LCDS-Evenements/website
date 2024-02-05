@@ -11,6 +11,8 @@ export type Artist = {
   twitterUrl?: string;
   youtubeUrl?: string;
   soundcloudUrl?: string;
+  tiktokUrl?: string;
+  threadlUrl?: string;
 }
 
 export const artists: Artist[] = [
@@ -26,10 +28,7 @@ export const artists: Artist[] = [
     day: "VENDREDI",
     spotifyUrl: "https://open.spotify.com/intl-fr/artist/42MNWxMfJgu8i7GZHBR0e4?_authfailed=1",
     instagramUrl: "https://www.instagram.com/luciendahais/",
-    facebookUrl: "https://www.facebook.com/dahaislucien/?locale=fr_FR",
-    twitterUrl: "https://twitter.com/luciendahais",
-    youtubeUrl: "https://www.youtube.com/channel/UCPL9m82QdI_8lY-2fy7Md-w",
-    soundcloudUrl: "https://soundcloud.com/lucien-dahais"
+    tiktokUrl: "https://www.tiktok.com/@luciendahais"
   },
   {
     name: "Emira",
@@ -40,7 +39,9 @@ export const artists: Artist[] = [
     ],
     presenceDate: "Samedi 8 Juin",
     day: "SAMEDI",
-    instagramUrl: "https://www.instagram.com/emira.thlt/?img_index=1"
+    instagramUrl: "https://www.instagram.com/emira.thlt/?img_index=1",
+    soundcloudUrl: "https://on.soundcloud.com/bAbdGXt7fxGdTBfAA",
+    threadlUrl: "https://www.threads.net/@emira.thlt"
   },
   {
     name: "Humain",
@@ -75,7 +76,9 @@ export const artists: Artist[] = [
       "Grâce à son talent et à sa détermination, Alice April a réussi à se faire remarquer sur la scène musicale, où elle a rapidement gagné en popularité. Ses performances énergiques et ses mix lui ont valu une base de fans fidèles qui ne manquent jamais une occasion de venir la voir en live. 🪩"
     ],
     presenceDate: "Samedi 8 Juin",
-    day: "SAMEDI"
+    day: "SAMEDI",
+    instagramUrl: "https://www.instagram.com/alice.aprill/",
+    soundcloudUrl: "https://soundcloud.com/alice-aprill"
   },
   {
     name: "Boostee",
@@ -87,7 +90,10 @@ export const artists: Artist[] = [
       "Boostee présente son quatrième album, Addenda. Sorti le 19 mai 2023, c’est aux yeux de l’artiste un album particulier puisqu’il retrace en quinze titres une relation intense et puissante. Intime et énergique, ce nouvel opus est largement dominé par une sonorité pop et positive. Porté par les singles « S’attacher » et « Faux Départ » qui comptabilisent plus de 5 millions d’écoutes sur les différentes plateformes, Boostee nous prouve, l’amour et l’attachement que sa communauté lui porte. ✨"
     ],
     presenceDate: "Samedi 8 Juin",
-    day: "SAMEDI"
+    day: "SAMEDI",
+    instagramUrl: "https://www.instagram.com/boostee/",
+    youtubeUrl: "https://www.youtube.com/channel/UCM-F3OsQHx8IbJetwv9UtYQ",
+    spotifyUrl: "https://open.spotify.com/intl-fr/artist/2PNcNJDYJyoeJqUjgHz9Xa"
   },
   {
     name: "Grayssoker",
