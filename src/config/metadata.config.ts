@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     siteName: data.siteName,
     url: "https://cuicuitedays.fr/",
     type: "website",
-    images: ["/illustration/logo.png"]
+    images: ["./illustration/logo.png"]
   },
 
   twitter: {
@@ -45,6 +45,6 @@ export const metadata: Metadata = {
     },
     description: data.description,
     site: data.siteName,
-    images: ["/illustration/logo.png"]
+    images: ["./illustration/logo.png"]
   }
 };
