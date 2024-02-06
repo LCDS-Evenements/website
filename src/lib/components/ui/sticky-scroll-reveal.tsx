@@ -14,7 +14,7 @@ export const StickyScroll = ({
   }[];
 }): ReactElement => {
   const [activeCard, setActiveCard] = React.useState(0);
-  const ref = useRef<any>(null);
+  const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     container: ref,
     offset: ["start start", "end start"]
@@ -75,7 +75,8 @@ export const StickyScroll = ({
           ))}
         </div>
       </div>
-      <motion.div className="hidden lg:block h-80 w-[30rem] top-10 rounded-md bg-white sticky overflow-hidden border-2 border-bodyBackground">
+      <motion.div
+        className="hidden lg:block h-80 w-[30rem] top-10 rounded-md bg-white sticky overflow-hidden border-2 border-bodyBackground">
         <Image
           className="w-full h-full"
           src={`/photos/${activeCard + 1}.jpg`}
