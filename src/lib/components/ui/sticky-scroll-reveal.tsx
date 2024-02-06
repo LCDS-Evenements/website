@@ -1,8 +1,9 @@
 "use client";
 import type { ReactElement } from "react";
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { useMotionValueEvent, useScroll } from "framer-motion";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export const StickyScroll = ({
   content
@@ -34,17 +35,13 @@ export const StickyScroll = ({
     "transparent",
     "transparent"
   ];
-  const linearGradients = [
-    "linear-gradient(to bottom right, red, blue)",
-    "linear-gradient(to bottom right, green, orange)",
-    "linear-gradient(to bottom right, pink, yellow)"
-  ];
+
   return (
     <motion.div
       animate={{
         backgroundColor: backgroundColors[activeCard % backgroundColors.length]
       }}
-      className="h-[30rem] w-full overflow-y-auto flex justify-center relative space-x-64 rounded-md p-10"
+      className="h-[30rem] w-full overflow-y-auto flex justify-center relative space-x-36 rounded-md p-10"
       ref={ref}
     >
       <div className="div relative flex items-start px-4">
@@ -58,7 +55,7 @@ export const StickyScroll = ({
                 animate={{
                   opacity: activeCard === index ? 1 : 0.3
                 }}
-                className="text-2xl font-bold text-slate-100"
+                className="text-3xl font-semibold tracking-wider text-bodyBackground"
               >
                 {item.title}
               </motion.h2>
@@ -69,7 +66,7 @@ export const StickyScroll = ({
                 animate={{
                   opacity: activeCard === index ? 1 : 0.3
                 }}
-                className="text-kg text-slate-300 max-w-sm mt-10"
+                className="text-lg text-bodyBackground tracking-wide max-w-sm mt-10"
                 style={{ fontFamily: "'Montserrat', sans-serif" }}
               >
                 {item.description}
@@ -79,13 +76,13 @@ export const StickyScroll = ({
           <div className="h-40" />
         </div>
       </div>
-      <motion.div
-        animate={{
-          background: linearGradients[activeCard % linearGradients.length]
-        }}
-        className="hidden lg:block h-60 w-80 top-20 rounded-md bg-white sticky overflow-hidden"
-      ></motion.div>
-
+      <Image
+        className="hidden lg:block h-80 w-[30rem] top-10 rounded-md bg-white sticky overflow-hidden border-2 border-bodyBackground"
+        src={`/photos/${activeCard + 1}.jpg`}
+        alt="Photo qui représente le festival Les CuicuiteDays"
+        height={150}
+        width={150}
+      />
     </motion.div>
   );
 };
