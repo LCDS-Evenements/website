@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     siteName: data.siteName,
     url: "https://cuicuitedays.fr/",
     type: "website",
-    images: ["./illustration/logo.png"]
+    images: ["https://scontent-cdg4-2.cdninstagram.com/v/t51.2885-19/408643515_402785625411405_5383316306046851764_n.jpg?stp=dst-jpg_s320x320&_nc_ht=scontent-cdg4-2.cdninstagram.com&_nc_cat=109&_nc_ohc=zbWZ6tF1J6wAX-Fhzqk&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfDr2oNAYJ5EWrt_ZwsCgCmujQdAQCPhF3sXjKNALkAIpw&oe=65C66306&_nc_sid=8b3546"]
   },
 
   twitter: {
@@ -45,6 +45,6 @@ export const metadata: Metadata = {
     },
     description: data.description,
     site: data.siteName,
-    images: ["./illustration/logo.png"]
+    images: ["https://scontent-cdg4-2.cdninstagram.com/v/t51.2885-19/408643515_402785625411405_5383316306046851764_n.jpg?stp=dst-jpg_s320x320&_nc_ht=scontent-cdg4-2.cdninstagram.com&_nc_cat=109&_nc_ohc=zbWZ6tF1J6wAX-Fhzqk&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfDr2oNAYJ5EWrt_ZwsCgCmujQdAQCPhF3sXjKNALkAIpw&oe=65C66306&_nc_sid=8b3546"]
   }
 };

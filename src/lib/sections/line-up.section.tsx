@@ -14,7 +14,6 @@ const LineUp = (): ReactElement => {
   const [artistsList, setArtistsList] = useState<Artist[]>([]);
 
   useEffect(() => {
-    console.log(selectedDay);
     if (selectedDay === "TOUS") {
       setArtistsList(artists);
     } else {
