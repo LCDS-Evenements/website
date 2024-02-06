@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import "./globals.css";
 import type { Component } from "@/lib/utils/component";
 import type { PropsWithChildren } from "react";
@@ -9,10 +8,7 @@ import { ScrollToTop } from "@/lib/components/layout/scroll-to-top";
 
 const magicRetro = localFont({ src: "../../public/font/Magic Retro.woff2" });
 
-export const metadata: Metadata = {
-  title: "NextJS - Template",
-  description: "NextJS Template with lots of usefull stuff, by hcampos."
-};
+export { metadata } from "@/config/metadata.config";
 
 const RootLayout: Component<PropsWithChildren> = ({ children }) => {
   return (
