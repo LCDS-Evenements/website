@@ -1,6 +1,6 @@
 "use client";
 import type { ReactElement } from "react";
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import { useMotionValueEvent, useScroll } from "framer-motion";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -73,16 +73,17 @@ export const StickyScroll = ({
               </motion.p>
             </div>
           ))}
-          <div className="h-40" />
         </div>
       </div>
-      <Image
-        className="hidden lg:block h-80 w-[30rem] top-10 rounded-md bg-white sticky overflow-hidden border-2 border-bodyBackground"
-        src={`/photos/${activeCard + 1}.jpg`}
-        alt="Photo qui représente le festival Les CuicuiteDays"
-        height={150}
-        width={150}
-      />
+      <motion.div className="hidden lg:block h-80 w-[30rem] top-10 rounded-md bg-white sticky overflow-hidden border-2 border-bodyBackground">
+        <Image
+          className="w-full h-full"
+          src={`/photos/${activeCard + 1}.jpg`}
+          alt="Photo qui représente le festival Les CuicuiteDays"
+          height={500}
+          width={450}
+        />
+      </motion.div>
     </motion.div>
   );
 };
