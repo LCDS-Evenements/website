@@ -4,7 +4,7 @@ import { ButtonLink } from "@/lib/components/ui/button-link";
 
 const Home = (): ReactElement => {
   return (
-    <section className="w-screen h-dvh bg-home bg-no-repeat bg-cover bg-center">
+    <section className="w-screen h-dvh bg-blueWaves bg-no-repeat bg-cover bg-center">
       <div className="w-full h-full flex items-center justify-center relative">
         <Image
           src={"./illustration/illustration.svg"}
