@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import type { Metadata } from "next";
 
 const data = {
@@ -21,6 +22,8 @@ export const metadata: Metadata = {
   description: data.description,
   applicationName: data.siteName,
 
+  keywords: ["festival", "musique", "concert", "cuicuitedays", "amis", "food trucks", "billetterie", "bressuire", "noirlieu", "deux-sèvres", "nouvelle-aquitaine"],
+
   openGraph: {
     title: {
       template: "%s - " + data.title,
@@ -40,6 +43,8 @@ export const metadata: Metadata = {
       default: data.title,
       absolute: data.title
     },
-    description: data.description
+    description: data.description,
+    site: data.siteName,
+    images: ["/illustration/logo.png"]
   }
 };
