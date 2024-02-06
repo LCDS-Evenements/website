@@ -1,9 +1,35 @@
+/* eslint-disable max-len */
 import type { ReactElement } from "react";
+import { StickyScroll } from "../components/ui/sticky-scroll-reveal";
+
+const content = [
+  {
+    title: "Collaborative Editing",
+    description:
+      "Work together in real time with your team, clients, and stakeholders. Collaborate on documents, share ideas, and make decisions quickly. With our platform, you can streamline your workflow and increase productivity."
+  },
+  {
+    title: "Real time changes",
+    description:
+      "See changes as they happen. With our platform, you can track every modification in real time. No more confusion about the latest version of your project. Say goodbye to the chaos of version control and embrace the simplicity of real-time updates."
+  },
+  {
+    title: "Version control",
+    description:
+      "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions."
+  },
+  {
+    title: "Running out of content",
+    description:
+      "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions."
+  }
+];
 
 const StorySection = (): ReactElement => {
   return (
-    <section className="w-screen min-h-dvh bg-blueWaves bg-no-repeat bg-cover bg-center px-60 py-28">
-
+    <section className="w-screen min-h-hdv bg-blueWaves bg-no-repeat bg-cover bg-center py-28">
+      <h2 className="text-center text-5xl text-bodyBackground mb-16">NOTRE HISTOIRE</h2>
+      <StickyScroll content={content} />
     </section>
   );
 };
