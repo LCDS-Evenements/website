@@ -76,13 +76,27 @@ export const StickyScroll = ({
         </div>
       </div>
       <motion.div
-        className="hidden lg:block h-80 w-[30rem] top-10 rounded-md bg-white sticky overflow-hidden border-2 border-bodyBackground">
+        className="hidden lg:block h-80 w-[30rem] top-10 rounded-md bg-white sticky border-2 border-bodyBackground">
+        <Image
+          className="absolute -top-[16%] -left-[10%] z-10"
+          src={"/illustration/flower.svg"}
+          alt="Fleur qui suit la charte graphique du festival"
+          width={120}
+          height={120}
+        />
         <Image
           className="w-full h-full"
           src={`/photos/${activeCard + 1}.jpg`}
           alt="Photo qui représente le festival Les CuicuiteDays"
           height={500}
           width={450}
+        />
+        <Image
+          className="absolute -bottom-[16%] -right-[10%] z-10"
+          src={"/illustration/bird.svg"}
+          alt="Oiseau qui suit la charte graphique du festival"
+          width={120}
+          height={120}
         />
       </motion.div>
     </motion.div>
