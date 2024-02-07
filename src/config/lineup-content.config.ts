@@ -4,21 +4,21 @@ export const content = [
   {
     title: "Qui sommes nous ?",
     description:
-      "Une bande copains"
+      "Une bande de copains, qui ce sont lancés le pari d'organiser un évenement qui réunis pleins de personnes afin de passer un bon moment tous ensemble. 🤩 Pari réussi, car pour cette nouvelle édition le festival ouvre ses portes à encore plus de monde ! 🫶"
   },
   {
-    title: "Real time changes",
+    title: "Les CuicuiteDays c'est quoi ?",
     description:
-      "See changes as they happen. With our platform, you can track every modification in real time. No more confusion about the latest version of your project. Say goodbye to the chaos of version control and embrace the simplicity of real-time updates."
+      "Les CuicuiteDays c'est un festival, qui est maintenant rendu à ca deuxième édition ouverte au publique. 🌟 Il dure deux jours, réunit une dizaine d'artiste, des activités, des food-trucks, beaucoup de monde et surtout une ambiance de fou ! 🎉"
   },
   {
-    title: "Version control",
+    title: "L'origine",
     description:
-      "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions."
+      "À l'origine Les CuicuiteDays était un évenement privé qui avait pour but de réunir des copains qui partait dans différentes villes pour leurs études. 🪩 Puis au fil du temps de plus en plus de gens ont voulu participer à l'évenement, et c'est comme ça que le festival est né ! 🎈"
   },
   {
-    title: "Running out of content",
+    title: "Nos valeurs",
     description:
-      "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions."
+      "Les valeurs des CuicuiteDays sont la convivialité, la bonne humeur, la fête, la musique, la danse, la découverte, la rencontre, la joie, la bienveillance, la liberté, la tolérance, le partage, le respect, la diversité, la joie de vivre, la liberté d'être soi-même, la liberté d'être ensemble, la liberté d'être heureux, la liberté d'être libre. ✌️"
   }
 ];
