@@ -9,7 +9,7 @@ import { artists } from "@/config/artists.config";
 import { ArtistCard } from "../components/artist-card/artist-card";
 import { DaySelectorStore } from "../stores/day-selector-store";
 
-const LineUp = (): ReactElement => {
+const LineUpSection = (): ReactElement => {
   const selectedDay = DaySelectorStore((state) => state.selectedDay);
   const [artistsList, setArtistsList] = useState<Artist[]>([]);
 
@@ -55,4 +55,4 @@ const LineUp = (): ReactElement => {
   );
 };
 
-export default LineUp;
+export default LineUpSection;

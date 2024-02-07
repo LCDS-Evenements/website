@@ -2,7 +2,7 @@ import type { ReactElement } from "react";
 import Image from "next/image";
 import { ButtonLink } from "@/lib/components/ui/button-link";
 
-const Home = (): ReactElement => {
+const HomeSection = (): ReactElement => {
   return (
     <section className="w-screen h-dvh bg-blueWaves bg-no-repeat bg-cover bg-center">
       <div className="w-full h-full flex items-center justify-center relative">
@@ -27,4 +27,4 @@ const Home = (): ReactElement => {
   );
 };
 
-export default Home;
+export default HomeSection;
