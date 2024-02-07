@@ -1,8 +1,8 @@
-import React from "react";
+import type { ReactElement } from "react";
 
-const AftermovieSection = () => {
+const AftermovieSection = (): ReactElement => {
   return (
-    <div>AftermovieSection</div>
+    <section className="w-screen h-dvh bg-blueWaves bg-no-repeat bg-cover bg-center"></section>
   );
 };
 
