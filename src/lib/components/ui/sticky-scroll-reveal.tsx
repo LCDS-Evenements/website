@@ -66,7 +66,7 @@ export const StickyScroll = ({
                 animate={{
                   opacity: activeCard === index ? 1 : 0.3
                 }}
-                className="text-lg text-bodyBackground font-semibold tracking-wide max-w-sm mt-10"
+                className="text-lg text-bodyBackground font-semibold tracking-wide max-w-lg mt-5"
                 style={{ fontFamily: "'Montserrat', sans-serif" }}
               >
                 {item.description}
