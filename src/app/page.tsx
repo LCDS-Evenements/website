@@ -8,9 +8,11 @@ const MainPage = (): ReactElement => {
   return (
     <main className="no-scrollbar">
       <HomeSection />
-      <LineUpSection />
-      <StorySection />
-      <AftermovieSection />
+      <div className="-translate-y-[5%]">
+        <LineUpSection />
+        <StorySection />
+        <AftermovieSection />
+      </div>
     </main>
   );
 };
