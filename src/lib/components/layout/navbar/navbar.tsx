@@ -16,7 +16,7 @@ export const Navbar = (): ReactElement => {
       const documentHeight = document.documentElement.scrollHeight;
       const scrollPosition = window.scrollY;
 
-      const scrollThreshold = (documentHeight - windowHeight) / 4;
+      const scrollThreshold = (documentHeight - windowHeight) / 10;
 
       if (scrollPosition >= scrollThreshold) {
         setOpacity("opacity-80");
@@ -48,10 +48,11 @@ export const Navbar = (): ReactElement => {
       <div className="flex items-center justify-between w-[95%] h-full">
         <Image src="./illustration/logo.svg" width={80} height={80} alt="Logo officiel du festival CuicuiteDays" />
         <div className="flex items-center gap-6">
-          <NextLink href="" text="Line up" />
-          <NextLink href="" text="Merchandising" />
-          <NextLink href="" text="Notre histoire" />
-          <NextLink href="" text="F.A.Q" />
+          <NextLink href="#lineup" text="Line up" />
+          {/* <NextLink href="" text="Merchandising" /> */}
+          <NextLink href="#story" text="Notre histoire" />
+          <NextLink href="#aftermovie" text="Aftermovie" />
+          {/* <NextLink href="" text="F.A.Q" /> */}
         </div>
         <ButtonLink href="" variant="hoverSimpleYellow" text="Billetterie" />
       </div>

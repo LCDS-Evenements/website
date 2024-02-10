@@ -11,7 +11,7 @@ const AftermovieSection = (): ReactElement => {
   };
 
   return (
-    <section className="w-screen h-dvh bg-whiteWaves bg-no-repeat bg-cover bg-center py-28 px-60">
+    <section id="aftermovie" className="w-screen h-dvh bg-whiteWaves bg-no-repeat bg-cover bg-center py-28 px-60">
       <h2 className="text-center text-5xl text-blue mb-14">AFTERMOVIE</h2>
       <div className="w-full ">
         <iframe

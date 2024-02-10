@@ -12,7 +12,7 @@ export { metadata } from "@/config/metadata.config";
 
 const RootLayout: Component<PropsWithChildren> = ({ children }) => {
   return (
-    <html lang="en" className="no-scrollbar">
+    <html lang="en" className="no-scrollbar scroll-smooth">
       <body className={cn(magicRetro.className, "bg-bodyBackground overflow-x-hidden no-scrollbar")}>
         <Navbar />
         <ScrollToTop />

@@ -13,7 +13,7 @@ export const ScrollToTop = (): ReactElement => {
       const documentHeight = document.documentElement.scrollHeight;
       const scrollPosition = window.scrollY;
 
-      const scrollThreshold = (documentHeight - windowHeight) / 4;
+      const scrollThreshold = (documentHeight - windowHeight) / 10;
 
       if (scrollPosition >= scrollThreshold) {
         setRotation("rotate-[60deg]");
