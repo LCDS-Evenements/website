@@ -49,10 +49,11 @@ export const Navbar = (): ReactElement => {
         <Image src="./illustration/logo.svg" width={80} height={80} alt="Logo officiel du festival CuicuiteDays" />
         <div className="flex items-center gap-6">
           <NextLink href="#lineup" text="Line up" />
-          {/* <NextLink href="" text="Merchandising" /> */}
           <NextLink href="#story" text="Notre histoire" />
           <NextLink href="#aftermovie" text="Aftermovie" />
+          {/* <NextLink href="" text="Merchandising" /> */}
           {/* <NextLink href="" text="F.A.Q" /> */}
+          {/* <NextLink href="" text="Sponsors" /> */}
         </div>
         <ButtonLink href="" variant="hoverSimpleYellow" text="Billetterie" />
       </div>
