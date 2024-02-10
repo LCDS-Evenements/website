@@ -6,7 +6,7 @@ import AftermovieSection from "@/lib/sections/aftermovie.section";
 
 const MainPage = (): ReactElement => {
   return (
-    <main>
+    <main className="no-scrollbar">
       <HomeSection />
       <LineUpSection />
       <StorySection />

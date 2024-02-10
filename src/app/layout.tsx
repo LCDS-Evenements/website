@@ -12,8 +12,8 @@ export { metadata } from "@/config/metadata.config";
 
 const RootLayout: Component<PropsWithChildren> = ({ children }) => {
   return (
-    <html lang="en">
-      <body className={cn(magicRetro.className, "bg-bodyBackground overflow-x-hidden")}>
+    <html lang="en" className="no-scrollbar">
+      <body className={cn(magicRetro.className, "bg-bodyBackground overflow-x-hidden no-scrollbar")}>
         <Navbar />
         <ScrollToTop />
         {children}
