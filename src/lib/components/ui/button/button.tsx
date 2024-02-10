@@ -23,9 +23,9 @@ export const buttonVariants = cva(
   }
 );
 
-export const Button: Component<Props> = ({ text, className, variant, size }) => {
+export const Button: Component<Props> = ({ text, className, variant, size, onClick }) => {
   return (
-    <button className={cn(buttonVariants({ variant, size, className }))}>
+    <button onClick={onClick} className={cn(buttonVariants({ variant, size, className }))}>
       {text}
     </button>
   );
