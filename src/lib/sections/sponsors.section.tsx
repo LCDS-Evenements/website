@@ -13,7 +13,7 @@ const SponsorsSection = (): ReactElement => {
       <div className="w-full display flex items-center justify-center">
         <Marquee className="w-full" gradient autoFill speed={40} gradientColor="#1B2237" pauseOnHover>
           {sponsors.map((sponsor, idx) => (
-            <Link target="_blank" href={sponsor.href} key={idx} className="bg-whiteWaves bg-bodyBackground bg-no-repeat bg-cover bg-center rounded-full w-full h-40 w-40 mx-6 flex items-center justify-center group">
+            <Link target="_blank" href={sponsor.href} key={idx} className="bg-whiteWaves bg-bodyBackground bg-no-repeat bg-cover bg-center rounded-full h-40 w-40 mx-6 flex items-center justify-center group">
               <Image src={sponsor.imgPath} alt={sponsor.name} width={90} height={90} className="grayscale group-hover:grayscale-0" />
             </Link>
           ))}
