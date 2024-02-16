@@ -8,7 +8,7 @@ export const sponsors: Sponsor[] = [
   {
     name: "Bailly Chauffage logo",
     imgPath: "/sponsors/bailly.jpeg",
-    href: ""
+    href: "https://cuicuitedays.fr"
   },
   {
     name: "Département des Deux-Sèvres 79 logo",
@@ -33,7 +33,7 @@ export const sponsors: Sponsor[] = [
   {
     name: "Reveau Menuiserie logo",
     imgPath: "/sponsors/reveau.png",
-    href: ""
+    href: "https://cuicuitedays.fr"
   },
   {
     name: "V&B Bressuire logo",
