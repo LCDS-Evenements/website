@@ -4,16 +4,18 @@ import LineUpSection from "@/lib/sections/line-up.section";
 import StorySection from "@/lib/sections/story.section";
 import AftermovieSection from "@/lib/sections/aftermovie.section";
 import SponsorsSection from "@/lib/sections/sponsors.section";
+import { Footer } from "@/lib/components/layout/footer";
 
 const MainPage = (): ReactElement => {
   return (
-    <main className="no-scrollbar">
+    <main className="no-scrollbar h-dvh">
       <HomeSection />
-      <div className="">
+      <div className="-translate-y-[5%]">
         <LineUpSection />
         <SponsorsSection />
         <StorySection />
         <AftermovieSection />
+        <Footer />
       </div>
     </main>
   );
