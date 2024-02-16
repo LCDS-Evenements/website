@@ -6,6 +6,7 @@ import Image from "next/image";
 import { ButtonLink } from "@/lib/components/ui/button-link";
 import { NextLink } from "@/lib/components/ui/link";
 import { cn } from "@/lib/utils";
+import { navbarLinks } from "@/config/navbar.config";
 
 export const Navbar = (): ReactElement => {
   const [opacity, setOpacity] = useState<string>("");
@@ -48,12 +49,13 @@ export const Navbar = (): ReactElement => {
       <div className="flex items-center justify-between w-[95%] h-full">
         <Image src="./illustration/logo.svg" width={80} height={80} alt="Logo officiel du festival CuicuiteDays" />
         <div className="flex items-center gap-6">
-          <NextLink href="#lineup" text="Line up" />
-          <NextLink href="#sponsors" text="Sponsors" />
-          <NextLink href="#story" text="Notre histoire" />
-          <NextLink href="#aftermovie" text="Aftermovie" />
-          {/* <NextLink href="" text="Merchandising" /> */}
-          {/* <NextLink href="" text="F.A.Q" /> */}
+          {navbarLinks.map((link, idx) => {
+            if (link.display === false) return null;
+
+            return (
+              <NextLink href={link.href} text={link.text} key={idx} />
+            );
+          })}
         </div>
         <ButtonLink href="" variant="hoverSimpleYellow" text="Billetterie" />
       </div>
