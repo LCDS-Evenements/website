@@ -54,7 +54,6 @@ export const Navbar = (): ReactElement => {
           <NextLink href="#aftermovie" text="Aftermovie" />
           {/* <NextLink href="" text="Merchandising" /> */}
           {/* <NextLink href="" text="F.A.Q" /> */}
-          {/* <NextLink href="" text="Sponsors" /> */}
         </div>
         <ButtonLink href="" variant="hoverSimpleYellow" text="Billetterie" />
       </div>

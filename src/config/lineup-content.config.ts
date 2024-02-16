@@ -1,6 +1,11 @@
 /* eslint-disable max-len */
 
-export const content = [
+export type Content = {
+  title: string;
+  description: string;
+}
+
+export const content: Content[] = [
   {
     title: "Qui sommes nous ?",
     description:
