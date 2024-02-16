@@ -9,7 +9,7 @@ const MainPage = (): ReactElement => {
   return (
     <main className="no-scrollbar">
       <HomeSection />
-      <div className="-translate-y-[5%]">
+      <div className="">
         <LineUpSection />
         <SponsorsSection />
         <StorySection />

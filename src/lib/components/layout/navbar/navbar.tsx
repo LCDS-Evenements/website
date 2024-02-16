@@ -36,29 +36,31 @@ export const Navbar = (): ReactElement => {
   }, []);
 
   return (
-    <nav
-      style={{ boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)" }}
-      className={
-        cn(
-          "bg-navbarBackground h-[60px] w-[96%] rounded-[50px] fixed top-8 left-1/2 -translate-x-1/2 flex items-center justify-center z-50 transition-all duration-300",
-          opacity,
-          "hover:opacity-100"
-        )
-      }
-    >
-      <div className="flex items-center justify-between w-[95%] h-full">
-        <Image src="./illustration/logo.svg" width={80} height={80} alt="Logo officiel du festival CuicuiteDays" />
-        <div className="flex items-center gap-6">
-          {navbarLinks.map((link, idx) => {
-            if (link.display === false) return null;
+    <header>
+      <nav
+        style={{ boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)" }}
+        className={
+          cn(
+            "bg-navbarBackground h-[60px] w-[96%] rounded-[50px] fixed top-8 left-1/2 -translate-x-1/2 flex items-center justify-center z-50 transition-all duration-300",
+            opacity,
+            "hover:opacity-100"
+          )
+        }
+      >
+        <div className="flex items-center justify-between w-[95%] h-full">
+          <Image src="./illustration/logo.svg" width={80} height={80} alt="Logo officiel du festival CuicuiteDays" />
+          <div className="flex items-center gap-6">
+            {navbarLinks.map((link, idx) => {
+              if (link.display === false) return null;
 
-            return (
-              <NextLink href={link.href} text={link.text} key={idx} />
-            );
-          })}
+              return (
+                <NextLink href={link.href} text={link.text} key={idx} />
+              );
+            })}
+          </div>
+          <ButtonLink href="" variant="hoverSimpleYellow" text="Billetterie" />
         </div>
-        <ButtonLink href="" variant="hoverSimpleYellow" text="Billetterie" />
-      </div>
-    </nav>
+      </nav>
+    </header>
   );
 };

@@ -27,6 +27,7 @@ module.exports = {
         montserrat: "Montserrat', sans-serif"
       },
       colors: {
+        divider: "#4A4E5E",
         bodyBackground: "#F9FAFF",
         navbarBackground: "#F8FAFF",
         yellowButton: "#FFB003",

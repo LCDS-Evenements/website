@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 import localFont from "next/font/local";
 import { Navbar } from "@/lib/components/layout/navbar";
 import { ScrollToTop } from "@/lib/components/layout/scroll-to-top";
+import { Footer } from "@/lib/components/layout/footer";
 
 const magicRetro = localFont({ src: "../../public/font/Magic Retro.woff2" });
 
@@ -17,6 +18,7 @@ const RootLayout: Component<PropsWithChildren> = ({ children }) => {
         <Navbar />
         <ScrollToTop />
         {children}
+        <Footer />
       </body>
     </html>
   );
