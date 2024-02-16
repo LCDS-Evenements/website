@@ -13,7 +13,7 @@ const HomeSection = (): ReactElement => {
           className="w-[90%] h-[94%] pointer-events-none"
           alt="Ensemble d'illustrations représentant le style graphique du festival CuicuiteDays"
         />
-        <div className="flex items-center justify-center flex-col absolute top-[80%] gap-3">
+        <div className="z-50 flex items-center justify-center flex-col absolute top-[75%] gap-3">
           <h4
             style={{ fontFamily: "Montserrat, sans-serif" }}
             className="text-white text-center text-lg font-thin tracking-wider"
