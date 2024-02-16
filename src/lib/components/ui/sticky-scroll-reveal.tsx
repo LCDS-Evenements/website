@@ -55,7 +55,7 @@ export const StickyScroll = ({
                 animate={{
                   opacity: activeCard === index ? 1 : 0.3
                 }}
-                className="text-3xl font-semibold tracking-wider text-bodyBackground"
+                className="text-3xl font-semibold tracking-wider text-blue"
               >
                 {item.title}
               </motion.h2>
@@ -66,7 +66,7 @@ export const StickyScroll = ({
                 animate={{
                   opacity: activeCard === index ? 1 : 0.3
                 }}
-                className="text-lg text-bodyBackground font-semibold tracking-wide max-w-lg mt-5"
+                className="text-lg text-blue font-semibold tracking-wide max-w-lg mt-5"
                 style={{ fontFamily: "'Montserrat', sans-serif" }}
               >
                 {item.description}
@@ -76,7 +76,7 @@ export const StickyScroll = ({
         </div>
       </div>
       <motion.div
-        className="hidden lg:block h-80 w-[30rem] top-10 rounded-md bg-white sticky border-2 border-bodyBackground">
+        className="hidden lg:block h-80 w-[30rem] top-10 rounded-md bg-white sticky border-2 border-blue">
         <Image
           className="absolute -top-[16%] -left-[10%] z-10"
           src={"/illustration/flower.svg"}
