@@ -8,7 +8,7 @@ import { Footer } from "@/lib/components/layout/footer";
 
 const MainPage = (): ReactElement => {
   return (
-    <main className="no-scrollbar h-dvh">
+    <main className="no-scrollbar h-dvh w-screen">
       <HomeSection />
       <div className="-translate-y-[5%]">
         <LineUpSection />
