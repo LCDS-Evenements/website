@@ -7,6 +7,7 @@ import { ButtonLink } from "@/lib/components/ui/button-link";
 import { NextLink } from "@/lib/components/ui/link";
 import { cn } from "@/lib/utils";
 import { navbarLinks } from "@/config/navbar.config";
+import { billetterieLink } from "@/config/billetterie.config";
 
 export const Navbar = (): ReactElement => {
   const [opacity, setOpacity] = useState<string>("");
@@ -58,7 +59,7 @@ export const Navbar = (): ReactElement => {
               );
             })}
           </div>
-          <ButtonLink href="" variant="hoverSimpleYellow" text="Billetterie" />
+          <ButtonLink href={billetterieLink} variant="hoverSimpleYellow" text="Billetterie" />
         </div>
       </nav>
     </header>

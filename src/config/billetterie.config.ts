@@ -1,0 +1,1 @@
+export const billetterieLink = "https://cuicuitedays.fr";

@@ -1,6 +1,7 @@
 import type { ReactElement } from "react";
 import Image from "next/image";
 import { ButtonLink } from "@/lib/components/ui/button-link";
+import { billetterieLink } from "@/config/billetterie.config";
 
 const HomeSection = (): ReactElement => {
   return (
@@ -20,7 +21,7 @@ const HomeSection = (): ReactElement => {
           >
             RÉSERVEZ DÈS MAINTENANT SUR NOTRE BILLETTERIE !
           </h4>
-          <ButtonLink href="" className="z-50" variant="hoverScaleYellow" text="Prenez-vos places !" />
+          <ButtonLink href={billetterieLink} className="z-50" variant="hoverScaleYellow" text="Prenez-vos places !" />
         </div>
       </div>
     </section>

@@ -6,6 +6,7 @@ import Youtube from "../../icons/youtube";
 import Link from "next/link";
 import Image from "next/image";
 import { ButtonLink } from "../../ui/button-link";
+import { billetterieLink } from "@/config/billetterie.config";
 
 export const Footer = (): ReactElement => {
   return (
@@ -21,7 +22,7 @@ export const Footer = (): ReactElement => {
           </div>
           <div>
             <p style={{ fontFamily: "Montserrat, sans-serif" }} className="text-blue font-semibold text-xl mb-4">Prenez vos places !</p>
-            <ButtonLink href="" text="Billetterie" variant="hoverScaleYellow"/>
+            <ButtonLink href={billetterieLink} text="Billetterie" variant="hoverScaleYellow"/>
           </div>
         </div>
         <div className="w-full h-[1%] bg-divider"></div>

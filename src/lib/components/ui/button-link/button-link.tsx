@@ -26,7 +26,7 @@ export const buttonLinkVariants = cva(
 
 export const ButtonLink: Component<Props> = ({ text, href, className, variant, size }) => {
   return (
-    <Link href={href}>
+    <Link target="_blank" href={href}>
       <button className={cn(buttonLinkVariants({ variant, size, className }))}>
         {text}
       </button>
