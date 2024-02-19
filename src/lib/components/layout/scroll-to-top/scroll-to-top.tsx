@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 "use client";
 
 import { useEffect, type ReactElement, useState } from "react";
@@ -40,13 +41,13 @@ export const ScrollToTop = (): ReactElement => {
   };
 
   return (
-    <Button onClick={handleClick} className="rounded-full bg-yellowButton flex items-center justify-center fixed bottom-12 right-20 z-50 p-2">
+    <Button onClick={handleClick} className="rounded-full bg-yellowButton flex items-center justify-center fixed bottom-6 right-6 md:bottom-12 md:right-20 z-50 p-2">
       <Image
         src={"./illustration/bird.svg"}
         height={50}
         width={50}
         alt="Oiseau qui pointe vers le haut pour pouvoir remonter tout en haut de la page"
-        className={cn(rotation, "transition duration-500 ease-in-out transform")}
+        className={cn(rotation, "transition duration-500 ease-in-out transform w-10 h-10 md:w-auto md:h-auto")}
       />
     </Button>
   );
