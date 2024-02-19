@@ -14,7 +14,7 @@ export const buttonLinkVariants = cva(
         hoverSimpleYellow: "bg-yellowButton hover:bg-yellowButton/80"
       },
       size: {
-        default: " px-5 py-2 text-xl"
+        default: "px-5 py-2 text-md md:text-xl"
       }
     },
     defaultVariants: {
