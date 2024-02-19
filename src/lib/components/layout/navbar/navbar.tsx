@@ -9,6 +9,7 @@ import { cn } from "@/lib/utils";
 import { navbarLinks } from "@/config/navbar.config";
 import { billetterieLink } from "@/config/billetterie.config";
 import { MenuIcon } from "lucide-react";
+import { Button } from "@/lib/components/ui/button";
 
 export const Navbar = (): ReactElement => {
   const [opacity, setOpacity] = useState<string>("");
@@ -43,7 +44,7 @@ export const Navbar = (): ReactElement => {
         style={{ boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)" }}
         className={
           cn(
-            "bg-navbarBackground h-[60px] w-[96%] rounded-[50px] fixed top-8 left-1/2 -translate-x-1/2 flex items-center justify-center z-50 transition-all duration-300",
+            "bg-navbarBackground h-[60px] w-[90%] md:w-[96%] rounded-[50px] fixed top-6 md:top-8 left-1/2 -translate-x-1/2 flex items-center justify-center z-50 transition-all duration-300",
             opacity,
             "hover:opacity-100"
           )
@@ -60,10 +61,7 @@ export const Navbar = (): ReactElement => {
               );
             })}
           </div>
-          <div>
-            <ButtonLink href={billetterieLink} variant="hoverSimpleYellow" text="Billetterie" />
-
-          </div>
+          <ButtonLink href={billetterieLink} variant="hoverSimpleYellow" text="Billetterie" />
         </div>
       </nav>
     </header>
