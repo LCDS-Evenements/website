@@ -3,6 +3,7 @@
 import { useEffect, type ReactElement, useState } from "react";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
+import { Button } from "../../ui/button";
 
 export const ScrollToTop = (): ReactElement => {
   const [rotation, setRotation] = useState<string>("");
@@ -39,7 +40,7 @@ export const ScrollToTop = (): ReactElement => {
   };
 
   return (
-    <button onClick={handleClick} className="rounded-full bg-yellowButton flex items-center justify-center fixed bottom-12 right-20 z-50 p-2">
+    <Button onClick={handleClick} className="rounded-full bg-yellowButton flex items-center justify-center fixed bottom-12 right-20 z-50 p-2">
       <Image
         src={"./illustration/bird.svg"}
         height={50}
@@ -47,6 +48,6 @@ export const ScrollToTop = (): ReactElement => {
         alt="Oiseau qui pointe vers le haut pour pouvoir remonter tout en haut de la page"
         className={cn(rotation, "transition duration-500 ease-in-out transform")}
       />
-    </button>
+    </Button>
   );
 };

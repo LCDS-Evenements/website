@@ -26,13 +26,15 @@ const AftermovieSection = (): ReactElement => {
         <Button
           onClick={() => void handleClick("https://www.youtube.com/embed/B23eCA_GXxU?si=ndkiMthBxff87Vvw")}
           variant="hoverScaleYellow"
-          text="Édition 2023"
-        />
+        >
+          Édition 2023
+        </Button>
         <Button
           onClick={() => void handleClick("https://www.youtube.com/embed/t0_NekCoW0I?si=49xDSyTUQQnf3kO4")}
           variant="hoverScaleYellow"
-          text="Édition 2022"
-        />
+        >
+          Édition 2022
+        </Button>
       </div>
     </section>
   );

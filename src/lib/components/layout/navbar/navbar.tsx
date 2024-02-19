@@ -8,6 +8,7 @@ import { NextLink } from "@/lib/components/ui/link";
 import { cn } from "@/lib/utils";
 import { navbarLinks } from "@/config/navbar.config";
 import { billetterieLink } from "@/config/billetterie.config";
+import { MenuIcon } from "lucide-react";
 
 export const Navbar = (): ReactElement => {
   const [opacity, setOpacity] = useState<string>("");
