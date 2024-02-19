@@ -50,7 +50,7 @@ export const Navbar = (): ReactElement => {
       >
         <div className="flex items-center justify-between w-[95%] h-full">
           <Image src="./illustration/logo.svg" width={80} height={80} alt="Logo officiel du festival CuicuiteDays" />
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-6 hidden md:block">
             {navbarLinks.map((link, idx) => {
               if (link.display === false) return null;
 
@@ -59,7 +59,10 @@ export const Navbar = (): ReactElement => {
               );
             })}
           </div>
-          <ButtonLink href={billetterieLink} variant="hoverSimpleYellow" text="Billetterie" />
+          <div>
+            <ButtonLink href={billetterieLink} variant="hoverSimpleYellow" text="Billetterie" />
+
+          </div>
         </div>
       </nav>
     </header>

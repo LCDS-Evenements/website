@@ -6,8 +6,6 @@ import AftermovieSection from "@/lib/sections/aftermovie.section";
 import SponsorsSection from "@/lib/sections/sponsors.section";
 import { Footer } from "@/lib/components/layout/footer";
 
-//TODO: Responsive of the website
-
 const MainPage = (): ReactElement => {
   return (
     <main className="no-scrollbar h-dvh w-screen">
