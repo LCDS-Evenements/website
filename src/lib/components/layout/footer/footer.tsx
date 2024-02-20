@@ -18,10 +18,10 @@ export const Footer = (): ReactElement => {
             <Link href="mailto:communication.cuicuitedays@gmail.com" style={{ fontFamily: "Montserrat, sans-serif" }} className="text-blue text-base md:text-lg font-light">communication.cuicuitedays@gmail.com</Link>
           </div>
           <div className="md:absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2">
-            <Link style={{ fontFamily: "Montserrat, sans-serif" }} className="text-blue text-lg font-light" href="/legal-notice">Mentions légales</Link>
+            <Link style={{ fontFamily: "Montserrat, sans-serif" }} className="text-blue text-base md:text-lg font-light" href="/legal-notice">Mentions légales</Link>
           </div>
           <div>
-            <p style={{ fontFamily: "Montserrat, sans-serif" }} className="text-blue font-semibold text-xl mb-2 md:mb-4">Prenez vos places !</p>
+            <p style={{ fontFamily: "Montserrat, sans-serif" }} className="text-blue font-semibold text-lg md:text-xl mb-2 md:mb-4">Prenez vos places !</p>
             <ButtonLink href={billetterieLink} text="Billetterie" variant="hoverScaleYellow"/>
           </div>
         </div>
@@ -38,13 +38,13 @@ export const Footer = (): ReactElement => {
               <Youtube className="text-blue w-5 h-5" />
             </Link>
           </div>
-          <p style={{ fontFamily: "Montserrat, sans-serif" }} className="md:absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md;-translate-y-1/2 text-blue text-lg font-light">
+          <p style={{ fontFamily: "Montserrat, sans-serif" }} className="md:absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md;-translate-y-1/2 text-blue text-base md:text-lg font-light">
             Design by
             <Link href="linkedin.com/in/antoine-gervais-2475911aa" target="_blank" className="text-yellowButton"> Antoine GERVAIS </Link>
             and developped by
             <Link href="malt.fr/profile/hugocampos" target="_blank" className="text-yellowButton"> Hugo CAMPOS</Link>
           </p>
-          <p style={{ fontFamily: "Montserrat, sans-serif" }} className="text-lg font-light text-blue">© LesCuicuiteDays</p>
+          <p style={{ fontFamily: "Montserrat, sans-serif" }} className="text-base md:text-lg font-light text-blue">© LesCuicuiteDays</p>
         </div>
       </div>
     </footer>
