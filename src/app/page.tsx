@@ -8,7 +8,7 @@ import LineUpSection from "@/lib/sections/line-up.section";
 
 const MainPage = (): ReactElement => {
   return (
-    <main className="no-scrollbar h-dvh w-screen">
+    <main className="no-scrollbar w-screen">
       <HomeSection />
       <LineUpSection />
       {/* <SponsorsSection />
