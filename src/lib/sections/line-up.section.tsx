@@ -22,7 +22,7 @@ const LineUpSection = (): ReactElement => {
   }, [selectedDay]);
 
   return (
-    <section id="lineup" className="w-screen min-h-dvh bg-lineup bg-repeat bg-cover bg-center px-0 md:px-60 pb-28 pt-80 md:pt-56 z-40">
+    <section id="lineup" className="w-screen min-h-dvh bg-lineup bg-repeat bg-cover bg-center px-0 md:px-60 pb-28 pt-12 md:pt-56 z-40">
       <h2 className="text-center text-3xl md:text-5xl text-blue mb-8 md:mb-16">LINE UP</h2>
       <div className="w-full">
         <div className="w-full flex items-center justify-center md:justify-start gap-3 mb-8">
