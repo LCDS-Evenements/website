@@ -10,8 +10,8 @@ export const Selector: Component<Props> = ({ text }) => {
   const setSelectedDay = DaySelectorStore((state) => state.setSelectedDay);
   const selectedDay = DaySelectorStore((state) => state.selectedDay);
 
-  const active = "px-5 pt-[5px] pb-[3px] rounded-[50px] border-2 border-blue bg-blue text-bodyBackground font-semibold text-base";
-  const unactive = "px-5 pt-[5px] pb-[3px] rounded-[50px] border-2 border-blue font-semibold text-blue text-base hover:bg-blue hover:text-bodyBackground transition-all duration-300 ease-in-out";
+  const active = "px-5 pt-[5px] pb-[3px] rounded-[50px] border-2 border-blue bg-blue text-bodyBackground font-semibold text-sm md:text-base";
+  const unactive = "px-5 pt-[5px] pb-[3px] rounded-[50px] border-2 border-blue font-semibold text-blue text-sm md:text-base hover:bg-blue hover:text-bodyBackground transition-all duration-300 ease-in-out";
 
   return (
     <button
