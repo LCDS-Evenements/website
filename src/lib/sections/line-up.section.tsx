@@ -22,7 +22,7 @@ const LineUpSection = (): ReactElement => {
   }, [selectedDay]);
 
   return (
-    <section id="lineup" className="w-screen bg-whiteWaves bg-center bg-auto bg-repeat-space px-0 md:px-60 pb-28 md:pt-32">
+    <section id="lineup" className="w-screen bg-whiteWaves bg-center bg-auto bg-repeat-space px-0 md:px-60 pb-28 md:pb-32 pt-28 md:pt-32">
       <h2 className="text-center text-3xl md:text-5xl text-blue mb-8 md:mb-16">LINE UP</h2>
       <div className="w-full">
         <div className="w-full flex items-center justify-center md:justify-start gap-3 mb-8">
@@ -30,7 +30,7 @@ const LineUpSection = (): ReactElement => {
           <Selector text="VENDREDI" />
           <Selector text="SAMEDI" />
         </div>
-        <div className="w-full h-fit flex flex-col items-center justify-center md:grid md:grid-cols-3 gap-4 md:gap-8">
+        <div className="w-full h-fit flex flex-col items-center justify-center md:grid md:grid-cols-3 gap-8">
           {artistsList.map((artist, idx) => (
             <ArtistCard
               key={idx}

@@ -1,20 +1,19 @@
 /* eslint-disable max-len */
 "use client";
 
-
+import { useRef } from "react";
 import type { Component } from "@/lib/utils/component";
 import type { Props } from "./artist-card.type";
+import Spotify from "@/lib/components/icons/spotify";
+import Youtube from "@/lib/components/icons/youtube";
+import Soundcloud from "@/lib/components/icons/soundcloud";
+import Instagram from "@/lib/components/icons/instagram";
+import Facebook from "@/lib/components/icons/facebook";
+import Twitter from "@/lib/components/icons/twitter";
+import Tiktok from "@/lib/components/icons/tiktok";
+import Thread from "@/lib/components/icons/thread";
 import Image from "next/image";
-import { useRef } from "react";
-import Spotify from "../icons/spotify";
-import Youtube from "../icons/youtube";
-import Soundcloud from "../icons/soundcloud";
-import Instagram from "../icons/instagram";
-import Facebook from "../icons/facebook";
-import Twitter from "../icons/twitter";
 import Link from "next/link";
-import Tiktok from "../icons/tiktok";
-import Thread from "../icons/thread";
 
 export const ArtistCard: Component<Props> = ({
   name,
@@ -53,13 +52,13 @@ export const ArtistCard: Component<Props> = ({
   return (
     <div
       style={{ perspective: "2500px" }}
-      className="max-h-fit max-w-full rounded-2xl group bg-transparent group"
+      className="h-[70%] w-[70%] rounded-2xl group bg-transparent group"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
       <div
         ref={wrapperRef}
-        className="transition-all w-full h-fit -z-[1] bg-transparent group-hover:blur-[3px]"
+        className="transition-all w-full -z-[1] bg-transparent group-hover:blur-[3px] flex justify-center"
       >
         <Image
           className="h-full w-full object-cover rounded-2xl bg-transparent"
