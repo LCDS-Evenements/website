@@ -10,13 +10,11 @@ const MainPage = (): ReactElement => {
   return (
     <main className="no-scrollbar h-dvh w-screen">
       <HomeSection />
-      <div className="md:-translate-y-[11%]">
-        <LineUpSection />
-        {/* <SponsorsSection />
+      <LineUpSection />
+      {/* <SponsorsSection />
         <StorySection />
         <AftermovieSection />
         <Footer /> */}
-      </div>
     </main>
   );
 };
