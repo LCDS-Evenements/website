@@ -1,11 +1,11 @@
 /* eslint-disable max-len */
 import type { ReactElement } from "react";
-import Instagram from "../../icons/instagram";
-import Facebook from "../../icons/facebook";
-import Youtube from "../../icons/youtube";
+import Instagram from "@/lib/components/icons/instagram";
+import Facebook from "@/lib/components/icons/facebook";
+import Youtube from "@/lib/components/icons/youtube";
 import Link from "next/link";
 import Image from "next/image";
-import { ButtonLink } from "../../ui/button-link";
+import { ButtonLink } from "@/lib/components/ui/button-link/button-link";
 import { billetterieLink } from "@/config/billetterie.config";
 
 export const Footer = (): ReactElement => {

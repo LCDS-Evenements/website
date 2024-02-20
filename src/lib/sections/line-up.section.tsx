@@ -3,11 +3,11 @@
 
 import type { ReactElement } from "react";
 import React, { useEffect, useState } from "react";
-import { Selector } from "../components/ui/selector";
+import { Selector } from "@/lib/components/ui/selector";
 import type { Artist } from "@/config/artists.config";
 import { artists } from "@/config/artists.config";
-import { ArtistCard } from "../components/artist-card/artist-card";
-import { DaySelectorStore } from "../stores/day-selector-store";
+import { ArtistCard } from "@/lib/components/artist-card/artist-card";
+import { DaySelectorStore } from "@/lib/stores/day-selector-store";
 
 const LineUpSection = (): ReactElement => {
   const selectedDay = DaySelectorStore((state) => state.selectedDay);

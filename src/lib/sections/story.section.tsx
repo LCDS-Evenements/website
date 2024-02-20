@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
 import type { ReactElement } from "react";
-import { StickyScroll } from "../components/ui/sticky-scroll-reveal";
+import { StickyScroll } from "@/lib/components/ui/sticky-scroll-reveal";
 import { content } from "@/config/lineup-content.config";
 
 const StorySection = (): ReactElement => {
