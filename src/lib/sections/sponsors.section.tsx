@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const SponsorsSection = (): ReactElement => {
   return (
-    <section id="sponsors" className="w-screen h-[65vh] md:h-[65dvh] bg-blueWaves bg-no-repeat bg-cover bg-center py-28 px-0 md:px-44">
+    <section id="sponsors" className="w-screen md:h-[65dvh] bg-blueWaves bg-no-repeat bg-cover bg-center py-28 px-0 md:px-44">
       <h2 className="text-center text-3xl md:text-5xl text-bodyBackground mb-4">NOS SPONSORS</h2>
       <p className="text-center text-lg md:text-xl text-bodyBackground mb-16">Ils nous font confiance...</p>
       <div className="w-full display flex items-center justify-center">
