@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, type ReactElement } from "react";
-import { Button } from "../components/ui/button";
+import { Button } from "@/lib/components/ui/button/button";
 
 const AftermovieSection = (): ReactElement => {
   const [videoUrl, setVideoUrl] = useState<string>("https://www.youtube.com/embed/B23eCA_GXxU?si=ndkiMthBxff87Vvw");
@@ -11,18 +11,19 @@ const AftermovieSection = (): ReactElement => {
   };
 
   return (
-    <section id="aftermovie" className="w-screen h-dvh bg-blueWaves bg-no-repeat bg-cover bg-center py-28 px-60">
-      <h2 className="text-center text-5xl text-bodyBackground mb-14">AFTERMOVIE</h2>
+    <section id="aftermovie" className="w-screen h-screen md:h-dvh bg-blueWaves bg-no-repeat bg-cover bg-center py-28 px-0 md:px-60">
+      <h2 className="text-center text-3xl md:text-5xl text-bodyBackground mb-14">AFTERMOVIE</h2>
       <div className="w-full ">
         <iframe
-          width="100%"
+          width="80%"
           height="500"
           src={videoUrl}
           title="Aftermovie CuicuiteDays"
           allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          className="mx-auto md:mx-0"
         />
       </div>
-      <div className="flex items-center justify-center gap-4 mt-6">
+      <div className="flex items-center justify-center gap-4 mt-10 md:mt-6">
         <Button
           onClick={() => void handleClick("https://www.youtube.com/embed/B23eCA_GXxU?si=ndkiMthBxff87Vvw")}
           variant="hoverScaleYellow"

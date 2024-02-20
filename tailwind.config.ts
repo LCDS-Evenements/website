@@ -28,6 +28,7 @@ module.exports = {
       },
       colors: {
         divider: "#4A4E5E",
+        blueBackground: "#1C2235",
         bodyBackground: "#F9FAFF",
         navbarBackground: "#F8FAFF",
         yellowButton: "#FFB003",
