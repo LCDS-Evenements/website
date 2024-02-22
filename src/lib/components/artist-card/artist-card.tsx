@@ -52,13 +52,13 @@ export const ArtistCard: Component<Props> = ({
   return (
     <div
       style={{ perspective: "2500px" }}
-      className="h-[70%] w-[70%] rounded-2xl group bg-transparent group"
+      className="h-[70%] w-[70%] md:max-h-fit md:max-w-full rounded-2xl group bg-transparent"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
       <div
         ref={wrapperRef}
-        className="transition-all w-full -z-[1] bg-transparent group-hover:blur-[3px] flex justify-center"
+        className="transition-all w-full h-fit md:h-auto -z-[1] bg-transparent group-hover:blur-[3px] flex md:block justify-center"
       >
         <Image
           className="h-full w-full object-cover rounded-2xl bg-transparent"
