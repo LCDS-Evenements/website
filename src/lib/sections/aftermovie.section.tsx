@@ -20,10 +20,18 @@ const AftermovieSection = (): ReactElement => {
           src={videoUrl}
           title="Aftermovie CuicuiteDays"
           allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          className="mx-auto md:mx-0"
+          className="mx-auto block md:hidden"
+        />
+        <iframe
+          width="100%"
+          height="500"
+          src={videoUrl}
+          title="Aftermovie CuicuiteDays"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          className="mx-0 hidden md:block"
         />
       </div>
-      <div className="flex items-center justify-center gap-4 mt-10 md:mt-6">
+      <div className="flex items-center justify-center gap-4 mt-10 md:mt-8">
         <Button
           onClick={() => void handleClick("https://www.youtube.com/embed/B23eCA_GXxU?si=ndkiMthBxff87Vvw")}
           variant="hoverScaleYellow"
