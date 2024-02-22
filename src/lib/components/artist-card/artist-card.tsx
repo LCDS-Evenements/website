@@ -26,7 +26,8 @@ export const ArtistCard: Component<Props> = ({
   soundcloudUrl,
   twitterUrl,
   tiktokUrl,
-  threadlUrl
+  threadlUrl,
+  className
 }) => {
   const wrapperRef = useRef<HTMLDivElement>(null);
   const infoRef = useRef<HTMLDivElement>(null);
@@ -52,7 +53,7 @@ export const ArtistCard: Component<Props> = ({
   return (
     <div
       style={{ perspective: "2500px" }}
-      className="h-[70%] w-[70%] md:max-h-fit md:max-w-full rounded-2xl group bg-transparent"
+      className={className}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >

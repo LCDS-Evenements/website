@@ -30,7 +30,7 @@ const LineUpSection = (): ReactElement => {
           <Selector text="VENDREDI" />
           <Selector text="SAMEDI" />
         </div>
-        <div className="w-full h-fit flex flex-col items-center justify-center md:grid md:grid-cols-3 gap-8">
+        <div className="w-full h-fit flex flex-col items-center justify-center md:grid md:grid-cols-3 gap-8 hidden md:flex">
           {artistsList.map((artist, idx) => (
             <ArtistCard
               key={idx}
@@ -47,6 +47,28 @@ const LineUpSection = (): ReactElement => {
               twitterUrl={artist.twitterUrl}
               tiktokUrl={artist.tiktokUrl}
               threadlUrl={artist.threadlUrl}
+              className="max-h-fit max-w-full rounded-2xl group bg-transparent"
+            />
+          ))}
+        </div>
+        <div className="w-full h-fit flex flex-col items-center justify-center md:grid md:grid-cols-3 gap-8 md:hidden">
+          {artistsList.map((artist, idx) => (
+            <ArtistCard
+              key={idx}
+              name={artist.name}
+              bio={artist.bio}
+              day={artist.day}
+              presenceDate={artist.presenceDate}
+              imagePath={artist.imagePath}
+              spotifyUrl={artist.spotifyUrl}
+              youtubeUrl={artist.youtubeUrl}
+              soundcloudUrl={artist.soundcloudUrl}
+              instagramUrl={artist.instagramUrl}
+              facebookUrl={artist.facebookUrl}
+              twitterUrl={artist.twitterUrl}
+              tiktokUrl={artist.tiktokUrl}
+              threadlUrl={artist.threadlUrl}
+              className="h-[70%] w-[70%] rounded-2xl group bg-transparent"
             />
           ))}
         </div>
