@@ -24,7 +24,7 @@ const HomeSection = (): ReactElement => {
         <div className="z-40 flex items-center justify-center flex-col absolute top-[70%] md:top-[80%] gap-6">
           <h4
             style={{ fontFamily: "Montserrat, sans-serif" }}
-            className="text-white text-center text-sm md:text-lg font-thin tracking-wider max-w-[80%]"
+            className="text-white text-center text-sm md:text-lg font-thin tracking-wider max-w-[80%] md:max-w-full"
           >
             RÉSERVEZ DÈS MAINTENANT SUR NOTRE BILLETTERIE !
           </h4>
