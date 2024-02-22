@@ -12,6 +12,7 @@ const HomeSection = (): ReactElement => {
           height={150}
           width={150}
           className="w-[90%] h-[94%] pointer-events-none hidden md:block"
+          loading="lazy"
           alt="Ensemble d'illustrations représentant le style graphique du festival CuicuiteDays"
         />
         <Image
@@ -19,6 +20,7 @@ const HomeSection = (): ReactElement => {
           height={150}
           width={150}
           className="w-[90%] h-[94%] pointer-events-none block md:hidden absolute -top-4"
+          loading="lazy"
           alt="Ensemble d'illustrations représentant le style graphique du festival CuicuiteDays"
         />
         <div className="z-40 flex items-center justify-center flex-col absolute top-[70%] md:top-[80%] gap-6">

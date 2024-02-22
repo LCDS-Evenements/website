@@ -21,6 +21,7 @@ const AftermovieSection = (): ReactElement => {
           title="Aftermovie CuicuiteDays"
           allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           className="mx-auto block md:hidden"
+          loading="lazy"
         />
         <iframe
           width="100%"
@@ -29,6 +30,7 @@ const AftermovieSection = (): ReactElement => {
           title="Aftermovie CuicuiteDays"
           allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           className="mx-0 hidden md:block"
+          loading="lazy"
         />
       </div>
       <div className="flex items-center justify-center gap-4 mt-10 md:mt-8">
