@@ -3,7 +3,6 @@ import { sponsors } from "@/config/sponsors.config";
 import type { ReactElement } from "react";
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
-import Link from "next/link";
 
 const SponsorsSection = (): ReactElement => {
   return (
@@ -13,9 +12,9 @@ const SponsorsSection = (): ReactElement => {
       <div className="w-full display flex items-center justify-center">
         <Marquee className="w-full" gradient autoFill speed={40} gradientColor="#1B2237" pauseOnHover>
           {sponsors.map((sponsor, idx) => (
-            <Link target="_blank" href={sponsor.href} key={idx} className="bg-whiteWaves bg-bodyBackground bg-no-repeat bg-cover bg-center rounded-full h-40 w-40 mx-6 flex items-center justify-center group">
+            <div key={idx} className="bg-whiteWaves bg-bodyBackground bg-no-repeat bg-cover bg-center rounded-full h-40 w-40 mx-6 flex items-center justify-center group">
               <Image src={sponsor.imgPath} loading="lazy" placeholder="blur" blurDataURL={sponsor.imgPath} alt={sponsor.name} width={90} height={90} className="grayscale group-hover:grayscale-0" />
-            </Link>
+            </div>
           ))}
         </Marquee>
       </div>
