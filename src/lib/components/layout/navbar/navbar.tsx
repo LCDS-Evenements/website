@@ -13,6 +13,7 @@ import { MenuIcon } from "lucide-react";
 
 export const Navbar = (): ReactElement => {
   const [opacity, setOpacity] = useState<string>("");
+  const [background, setBackground] = useState<string>("bg-bodyBackground");
 
   useEffect(() => {
     const handleScroll = (): void => {
@@ -24,10 +25,12 @@ export const Navbar = (): ReactElement => {
 
       if (scrollPosition >= scrollThreshold) {
         setOpacity("opacity-80");
+        setBackground("bg-bodyBackground/80");
       }
 
       if (scrollPosition < scrollThreshold) {
         setOpacity("");
+        setBackground("bg-bodyBackground");
       }
     };
 
@@ -44,13 +47,12 @@ export const Navbar = (): ReactElement => {
         style={{ boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)" }}
         className={
           cn(
-            "bg-navbarBackground h-[60px] w-[90%] md:w-[96%] rounded-[50px] fixed top-6 md:top-8 left-1/2 -translate-x-1/2 flex items-center justify-center z-50 transition-all duration-300",
-            opacity,
-            "hover:opacity-100"
+            "h-[60px] w-[90%] md:w-[96%] rounded-[50px] fixed top-6 md:top-8 left-1/2 -translate-x-1/2 flex items-center justify-center z-50 transition-all duration-300 backdrop-blur-sm group/navbar",
+            background,
           )
         }
       >
-        <div className="flex items-center justify-between w-[90%] md:w-[95%] h-full">
+        <div className={cn("flex items-center justify-between w-[90%] md:w-[95%] h-full group-hover/navbar:opacity-100", opacity)}>
           <Link href="/">
             <Image src="./illustration/logo.svg" width={80} height={80} alt="Logo officiel du festival CuicuiteDays" />
           </Link>
