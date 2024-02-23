@@ -4,7 +4,7 @@ import type { ReactElement } from "react";
 
 const LegalNotice = (): ReactElement => {
   return (
-    <section className="w-screen min-h-dvh bg-blueWaves bg-center bg-cover bg-no-repeat py-36 px-60">
+    <section className="w-screen md:min-h-dvh bg-blueWaves bg-center bg-auto md:bg-cover bg-repeat md:bg-no-repeat py-36 px-10 md:px-60">
       <h2 className="text-center text-3xl md:text-5xl text-bodyBackground mb-14">MENTIONS LÉGALES</h2>
       <div className="flex flex-col items-start justify-center gap-16">
         <div>
