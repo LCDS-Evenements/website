@@ -7,32 +7,32 @@ export type Links = {
 export const navbarLinks: Links[] = [
   {
     text: "Line up",
-    href: "#lineup",
+    href: "/#lineup",
     display: true
   },
   {
     text: "Sponsors",
-    href: "#sponsors",
+    href: "/#sponsors",
     display: true
   },
   {
     text: "Notre histoire",
-    href: "#story",
+    href: "/#story",
     display: true
   },
   {
     text: "Aftermovie",
-    href: "#aftermovie",
+    href: "/#aftermovie",
     display: true
   },
   {
     text: "Merchandising",
-    href: "#",
+    href: "/#",
     display: false
   },
   {
     text: "F.A.Q",
-    href: "#",
+    href: "/#",
     display: false
   }
 ];
