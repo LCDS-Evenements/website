@@ -124,7 +124,10 @@ export const artists: Artist[] = [
       "Ils ont fait les première parti de la rue ketanou, tryo, boulevards des airs, les neg’s marron, la scread connexion, sinsemilia, karimouche, elmer food beat... 🎵"
     ],
     presenceDate: "Samedi 8 Juin",
-    day: "SAMEDI"
+    day: "SAMEDI",
+    youtubeUrl: "https://www.youtube.com/channel/UCYRymcP9YejWTxvzTUv1eHg",
+    facebookUrl: "https://www.facebook.com/PLAGEARRIEREmusique/?locale=fr_FR",
+    soundcloudUrl: "https://soundcloud.com/plage-arri-re"
   },
   {
     name: "Michel Mercury",
