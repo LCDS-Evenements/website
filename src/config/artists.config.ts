@@ -137,6 +137,8 @@ export const artists: Artist[] = [
       "La seule limite de Michel est bien au delà du ciel... Son passage au Metal Corner de l'édition du siècle Hellfest 2022 a transformé la vie de ses 4000 spectateurs à tout jamais. A son actif, plus de 100 slams sur Céline Dion... De bar en bar, de festival en festival, Michel s'apprête désormais à embraser les Cuicuite Days comme il se doit ! 🪩"
     ],
     presenceDate: "Vendredi 7 Juin",
-    day: "VENDREDI"
+    day: "VENDREDI",
+    instagramUrl: "https://www.instagram.com/michelmercurytour/",
+    facebookUrl: "https://www.facebook.com/michelmercurytour/"
   }
 ];
