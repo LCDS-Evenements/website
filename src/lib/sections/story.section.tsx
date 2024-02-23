@@ -5,7 +5,7 @@ import { content } from "@/config/lineup-content.config";
 
 const StorySection = (): ReactElement => {
   return (
-    <section id="story" className="w-screen md:h-screen bg-whiteWaves bg-center bg-auto md:bg-cover bg-repeat-space md:bg-no-repeat py-28">
+    <section id="story" className="w-screen md:h-screen bg-whiteWaves bg-center bg-auto md:bg-cover bg-repeat md:bg-no-repeat py-28">
       <h2 className="text-center text-3xl md:text-5xl text-blue mb-16 md:mb-24">NOTRE HISTOIRE</h2>
       <StickyScroll content={content} />
       <div className="w-[80%] mx-auto flex md:hidden flex-col justify-center gap-16">
