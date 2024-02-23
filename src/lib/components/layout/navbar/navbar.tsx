@@ -65,7 +65,7 @@ export const Navbar = (): ReactElement => {
           </div>
           <div className="flex items-center gap-4">
             <ButtonLink href={billetterieLink} variant="hoverSimpleYellow" text="Billetterie" />
-            <MenuIcon className="w-6 h-6 text-blue" />
+            <MenuIcon className="w-6 h-6 text-blue block md:hidden" />
           </div>
         </div>
       </nav>
