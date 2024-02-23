@@ -10,7 +10,8 @@ const LegalNotice = (): ReactElement => {
         <div>
           <h4 className="text-2xl text-bodyBackground mb-4">Identité</h4>
           <p className="text-lg text-bodyBackground" style={{ fontFamily: "Montserrat, sans-serif" }}>
-            Le site www.cuicuitedays.fr (ci-après dénommé le « Site ») est édité et exploité par l&apos;association LCDS Evenements (ci-après dénommée « LCDS Evenements »), association loi 1901, représentée par M. Augustin FOUILLET, en qualité de Président.
+            Le site www.cuicuitedays.fr (ci-après dénommé le « Site ») est édité et exploité par l&apos;association LCDS Evenements (ci-après dénommée « LCDS Evenements »), association loi 1901, représentée par M. Augustin FOUILLET, en qualité de Président.<br />
+            Reponsable de la publication : M. Hugo CAMPOS, <Link className="text-yellowButton" href="mailto:hcampospro@gmail.com">hcampospro@gmail.com</Link>.
           </p>
         </div>
         <div>
