@@ -110,7 +110,11 @@ export const artists: Artist[] = [
       "En 2023, à 23 ans et alors qu’il vient de sortir son second EP « Accordéon Raveolution » le 3 février, Grayssoker continue d’offrir une seconde jeunesse à un instrument longtemps associé aux bals traditionnels et aux musiques de variétés, insufflant par la même occasion un vent de fraîcheur à la scène électro française avec une tournée de plus de cinquante concerts à travers la France, en passant par la Belgique et l’Italie. 🌐"
     ],
     presenceDate: "Vendredi 7 Juin",
-    day: "VENDREDI"
+    day: "VENDREDI",
+    instagramUrl: "https://www.instagram.com/grayssoker_accordion/",
+    youtubeUrl: "https://www.youtube.com/channel/UCcM4pLth8xdyEipvInoyAXA",
+    spotifyUrl: "https://open.spotify.com/intl-fr/artist/1JV79z1mQAFDKmdavQrC85",
+    facebookUrl: "https://www.facebook.com/grayssoker/?locale=fr_FR"
   },
   {
     name: "Plage Arrière",
