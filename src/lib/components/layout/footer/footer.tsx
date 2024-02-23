@@ -42,7 +42,7 @@ export const Footer = (): ReactElement => {
             Design by
             <Link href="https://linkedin.com/in/antoine-gervais-2475911aa" target="_blank" className="text-yellowButton"> Antoine GERVAIS </Link>
             and developped by
-            <Link href="https://malt.fr/profile/hugocampos" target="_blank" className="text-yellowButton"> Hugo CAMPOS</Link>
+            <Link href="https://hcampos.fr" target="_blank" className="text-yellowButton"> Hugo CAMPOS</Link>
           </p>
           <p style={{ fontFamily: "Montserrat, sans-serif" }} className="text-base md:text-lg font-light text-blue">© LesCuicuiteDays</p>
         </div>
