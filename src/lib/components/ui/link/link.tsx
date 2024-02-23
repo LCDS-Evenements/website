@@ -3,9 +3,9 @@ import Link from "next/link";
 import type { Props } from "./link.type";
 import Image from "next/image";
 
-export const NextLink: Component<Props> = ({ href, text }) => {
+export const NextLink: Component<Props> = ({ href, text, onClick }) => {
   return (
-    <div className="group w-fit h-fit relative">
+    <div onClick={onClick} className="group w-fit h-fit relative">
       <Link className="text-xl z-50 relative" href={href}>
         {text}
       </Link>
