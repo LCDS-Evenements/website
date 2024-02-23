@@ -1,7 +1,7 @@
 /* eslint-disable max-len */
 import type { ReactElement } from "react";
 import { StickyScroll } from "@/lib/components/ui/sticky-scroll-reveal";
-import { content } from "@/config/lineup-content.config";
+import { content } from "@/config/story-content.config";
 
 const StorySection = (): ReactElement => {
   return (
@@ -13,7 +13,9 @@ const StorySection = (): ReactElement => {
           <div key={idx}>
             <h4 className="text-blue text-2xl">{content.title}</h4>
             <p className="text-base text-blue font-semibold tracking-wide max-w-lg mt-5" style={{ fontFamily: "Montserrat, sans-serif" }}>
-              {content.description}
+              {content.description.map((description, idx) => (
+                <><span key={idx}>{description}</span><br /></>
+              ))}
             </p>
           </div>
         ))}

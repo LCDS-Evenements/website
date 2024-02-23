@@ -10,7 +10,7 @@ export const StickyScroll = ({
 }: {
   content: {
     title: string;
-    description: string;
+    description: string[];
   }[];
 }): ReactElement => {
   const [activeCard, setActiveCard] = React.useState(0);
@@ -69,7 +69,9 @@ export const StickyScroll = ({
                 className="text-lg text-blue font-semibold tracking-wide max-w-lg mt-5"
                 style={{ fontFamily: "'Montserrat', sans-serif" }}
               >
-                {item.description}
+                {item.description.map((description, idx) => (
+                  <><span key={idx}>{description}</span><br /></>
+                ))}
               </motion.p>
             </div>
           ))}
