@@ -66,7 +66,11 @@ export const artists: Artist[] = [
       "Après plus de 100 concerts et quelques 30000 kms parcourus, Cutting Corners repart en tournée en 2024 et dévoile son nouveau single « i’m OK ». 🎶"
     ],
     presenceDate: "Vendredi 7 Juin",
-    day: "VENDREDI"
+    day: "VENDREDI",
+    youtubeUrl: "https://www.youtube.com/@cuttingcorners4642",
+    instagramUrl: "https://www.instagram.com/cuttingcornersmusic/?hl=fr",
+    spotifyUrl: "https://open.spotify.com/intl-fr/artist/4FIvAJHVvPlyGAZg49pZ7n",
+    tiktokUrl: "https://www.tiktok.com/@cuttingcornersmusic"
   },
   {
     name: "Alice April",
