@@ -8,6 +8,7 @@ import { NextLink } from "@/lib/components/ui/link";
 import { cn } from "@/lib/utils";
 import { navbarLinks } from "@/config/navbar.config";
 import { billetterieLink } from "@/config/billetterie.config";
+import Link from "next/link";
 
 export const Navbar = (): ReactElement => {
   const [opacity, setOpacity] = useState<string>("");
@@ -49,7 +50,9 @@ export const Navbar = (): ReactElement => {
         }
       >
         <div className="flex items-center justify-between w-[95%] h-full">
-          <Image src="./illustration/logo.svg" width={80} height={80} alt="Logo officiel du festival CuicuiteDays" />
+          <Link href="/">
+            <Image src="./illustration/logo.svg" width={80} height={80} alt="Logo officiel du festival CuicuiteDays" />
+          </Link>
           <div className="items-center gap-6 hidden md:flex">
             {navbarLinks.map((link, idx) => {
               if (link.display === false) return null;
