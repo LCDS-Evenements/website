@@ -70,7 +70,7 @@ export const StickyScroll = ({
                 style={{ fontFamily: "'Montserrat', sans-serif" }}
               >
                 {item.description.map((description, idx) => (
-                  <><span key={idx}>{description}</span><br /></>
+                  <span key={description + idx}>{description} </span>
                 ))}
               </motion.p>
             </div>
