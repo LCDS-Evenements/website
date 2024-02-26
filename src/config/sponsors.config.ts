@@ -1,53 +1,55 @@
 export type Sponsor = {
   name: string;
   imgPath: string;
-  href: string;
 }
 
 export const sponsors: Sponsor[] = [
   {
     name: "Bailly Chauffage logo",
-    imgPath: "/sponsors/bailly.webp",
-    href: "https://cuicuitedays.fr"
+    imgPath: "/sponsors/bailly.webp"
   },
   {
     name: "Département des Deux-Sèvres 79 logo",
-    imgPath: "/sponsors/departement79.webp",
-    href: "https://www.deux-sevres.fr/"
+    imgPath: "/sponsors/departement79.webp"
   },
   {
     name: "EGDC logo",
-    imgPath: "/sponsors/egdc.webp",
-    href: "https://egdc.eu/"
+    imgPath: "/sponsors/egdc.webp"
   },
   {
     name: "OGS logo",
-    imgPath: "/sponsors/ogs.webp",
-    href: "https://ogs-securite.com/"
+    imgPath: "/sponsors/ogs.webp"
   },
   {
     name: "Pavillon du Bocage logo",
-    imgPath: "/sponsors/pavillon.webp",
-    href: "https://www.lespavillonsdubocage.fr/"
+    imgPath: "/sponsors/pavillon.webp"
   },
   {
     name: "Reveau Menuiserie logo",
-    imgPath: "/sponsors/reveau.webp",
-    href: "https://cuicuitedays.fr"
+    imgPath: "/sponsors/reveau.webp"
   },
   {
     name: "V&B Bressuire logo",
-    imgPath: "/sponsors/v&b.webp",
-    href: "https://www.vandb.fr/v-and-b-bressuire.html"
+    imgPath: "/sponsors/v&b.webp"
   },
   {
     name: "Xyleme logo",
-    imgPath: "/sponsors/xyleme.webp",
-    href: "https://www.xylemecom.fr/"
+    imgPath: "/sponsors/xyleme.webp"
   },
   {
     name: "YC-Conseil logo",
-    imgPath: "/sponsors/yc-conseil.webp",
-    href: "https://www.yc-conseil.fr/"
+    imgPath: "/sponsors/yc-conseil.webp"
+  },
+  {
+    name: "Bar du Coin logo",
+    imgPath: "/sponsors/bar-du-coin.webp"
+  },
+  {
+    name: "Bressuire logo",
+    imgPath: "/sponsors/bressuire.webp"
+  },
+  {
+    name: "MP Sonorisation logo",
+    imgPath: "/sponsors/mp-sonorisation.webp"
   }
 ];
