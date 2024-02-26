@@ -59,7 +59,7 @@ export const ArtistCard: Component<Props> = ({
     >
       <div
         ref={wrapperRef}
-        className="transition-all w-full h-fit md:h-auto -z-[1] bg-transparent group-hover:blur-[3px] flex md:block justify-center"
+        className="transition-all w-full h-fit -z-[1] bg-transparent group-hover:blur-[3px] flex md:block justify-center"
       >
         <Image
           className="h-full w-full object-cover rounded-2xl bg-transparent"
@@ -68,6 +68,7 @@ export const ArtistCard: Component<Props> = ({
           height={100}
           alt="Photo de l'artiste"
           loading="lazy"
+          quality={100}
         />
       </div>
       <div ref={infoRef} className="w-full opacity-0 rounded-md bg-blue/70 bottom-0 p-4 transition-all absolute group-hover:opacity-1">

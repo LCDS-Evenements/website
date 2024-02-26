@@ -10,7 +10,7 @@ const SponsorsSection = (): ReactElement => {
       <h2 className="text-center text-3xl md:text-5xl text-bodyBackground mb-4 uppercase">Nos sponsors</h2>
       <p className="text-center text-lg md:text-xl text-bodyBackground mb-16">Ils nous font confiance...</p>
       <div className="w-full display flex items-center justify-center">
-        <Marquee className="w-full" gradient autoFill speed={60} gradientColor="#1B2237" pauseOnHover>
+        <Marquee className="w-full" gradient autoFill speed={60} gradientColor="#1B2237">
           {sponsors.map((sponsor, idx) => (
             <div key={idx} className="bg-whiteWaves bg-bodyBackground bg-no-repeat bg-cover bg-center rounded-full h-40 w-40 mx-6 flex items-center justify-center group">
               <Image src={sponsor.imgPath} loading="lazy" placeholder="blur" blurDataURL={sponsor.imgPath} alt={sponsor.name} width={90} height={90} />
