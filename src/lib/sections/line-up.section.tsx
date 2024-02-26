@@ -51,7 +51,7 @@ const LineUpSection = (): ReactElement => {
             />
           ))}
         </div>
-        <div className="w-full h-fit flex flex-col items-center justify-center md:grid md:grid-cols-3 gap-8 md:hidden">
+        <div className="w-full h-fit flex flex-col items-center justify-center md:grid md:grid-cols-3 gap-8 md:hidden 2xl:flex">
           {artistsList.map((artist, idx) => (
             <ArtistCard
               key={idx}
