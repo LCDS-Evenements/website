@@ -62,7 +62,7 @@ export const ArtistCard: Component<Props> = ({
       className={cn(
         "rounded-2xl group bg-transparent w-3/4 h-3/4",
         md ? "max-w-full max-h-fit w-auto h-auto" : "",
-        xxl ? "max-w-full max-h-fit w-auto h-auto" : "",
+        xxl ? "w-[90%] h-[90%]" : "",
       )}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
