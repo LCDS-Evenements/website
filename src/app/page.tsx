@@ -6,6 +6,7 @@ import StorySection from "@/lib/sections/story.section";
 import AftermovieSection from "@/lib/sections/aftermovie.section";
 
 const MainPage = (): ReactElement => {
+
   return (
     <main className="no-scrollbar w-screen">
       <HomeSection />

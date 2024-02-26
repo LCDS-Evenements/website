@@ -7,6 +7,8 @@ import { Navbar } from "@/lib/components/layout/navbar";
 import { ScrollToTop } from "@/lib/components/layout/scroll-to-top";
 import { Footer } from "@/lib/components/layout/footer";
 import type { Viewport } from "next";
+import { Suspense } from "react";
+import Loading from "./loading";
 
 const magicRetro = localFont({ src: "../../public/font/Magic Retro.woff2" });
 
@@ -19,10 +21,12 @@ export const viewport: Viewport = {
 const RootLayout: Component<PropsWithChildren> = ({ children }) => {
   return (
     <html lang="en" className="no-scrollbar scroll-smooth">
-      <body className={cn(magicRetro.className, "bg-bodyBackground overflow-x-hidden h-fit no-scrollbar")}>
+      <body className={cn(magicRetro.className, "bg-bodyBackground overflow-x-hidden h-fit no-scrollbar relative")}>
         <Navbar />
         <ScrollToTop />
-        {children}
+        <Suspense fallback={<Loading />}>
+          {children}
+        </Suspense>
         <Footer />
       </body>
     </html>
