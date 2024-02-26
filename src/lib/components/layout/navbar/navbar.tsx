@@ -9,7 +9,7 @@ import { cn } from "@/lib/utils";
 import { navbarLinks } from "@/config/navbar.config";
 import { billetterieLink } from "@/config/billetterie.config";
 import Link from "next/link";
-import { MenuIcon } from "lucide-react";
+import { MenuIcon, TicketIcon } from "lucide-react";
 
 export const Navbar = (): ReactElement => {
   const [opacity, setOpacity] = useState<string>("");
@@ -54,7 +54,8 @@ export const Navbar = (): ReactElement => {
         }
       >
         <div className={cn("flex items-center justify-between w-[90%] md:w-[95%] h-full group-hover/navbar:opacity-100", opacity)}>
-          <Link href="/">
+          <MenuIcon onClick={() => setMenuIsOpen((curr) => !curr)} className="w-6 h-6 text-blue block md:hidden" />
+          <Link className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" href="/">
             <Image src="./illustration/logo.svg" width={80} height={80} alt="Logo officiel du festival CuicuiteDays" />
           </Link>
           <div className="items-center gap-6 hidden md:flex">
@@ -66,10 +67,7 @@ export const Navbar = (): ReactElement => {
               );
             })}
           </div>
-          <div className="flex items-center gap-4">
-            <ButtonLink href={billetterieLink} variant="hoverSimpleYellow" text="Billetterie" />
-            <MenuIcon onClick={() => setMenuIsOpen((curr) => !curr)} className="w-6 h-6 text-blue block md:hidden" />
-          </div>
+          <ButtonLink href={billetterieLink} variant="hoverSimpleYellow" text="Billetterie" />
         </div>
         <div
           className={cn(
