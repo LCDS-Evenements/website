@@ -12,7 +12,6 @@ import Facebook from "@/lib/components/icons/facebook";
 import Twitter from "@/lib/components/icons/twitter";
 import Tiktok from "@/lib/components/icons/tiktok";
 import Thread from "@/lib/components/icons/thread";
-import Image from "next/image";
 import Link from "next/link";
 import { useMediaQuery } from "usehooks-ts";
 import { cn } from "@/lib/utils";
@@ -71,14 +70,13 @@ export const ArtistCard: Component<Props> = ({
         ref={wrapperRef}
         className="transition-all w-full h-fit -z-[1] bg-transparent group-hover:blur-[3px] flex md:block justify-center"
       >
-        <Image
+        <img
           className="h-full w-full object-cover rounded-2xl bg-transparent"
           src={imagePath}
           width={100}
           height={100}
           alt="Photo de l'artiste"
           loading="lazy"
-          quality={100}
         />
       </div>
       <div ref={infoRef} className="w-full opacity-0 rounded-md bg-blue/70 bottom-0 p-4 transition-all absolute group-hover:opacity-1">
