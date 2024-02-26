@@ -34,5 +34,10 @@ export const navbarLinks: Links[] = [
     text: "F.A.Q",
     href: "/#",
     display: false
+  },
+  {
+    text: "Map",
+    href: "/map",
+    display: true
   }
 ];
