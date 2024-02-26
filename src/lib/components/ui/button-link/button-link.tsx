@@ -24,11 +24,11 @@ export const buttonLinkVariants = cva(
   }
 );
 
-export const ButtonLink: Component<Props> = ({ text, href, className, variant, size }) => {
+export const ButtonLink: Component<Props> = ({  href, className, variant, size, children, ...rest }) => {
   return (
     <Link target="_blank" href={href}>
-      <button style={{ boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)" }} className={cn(className, buttonLinkVariants({ variant, size }))}>
-        {text}
+      <button {...rest} style={{ boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)" }} className={cn(className, buttonLinkVariants({ variant, size }))}>
+        {children}
       </button>
     </Link>
   );

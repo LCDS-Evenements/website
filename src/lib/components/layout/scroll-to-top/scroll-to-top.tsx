@@ -47,7 +47,7 @@ export const ScrollToTop = (): ReactElement => {
         height={50}
         width={50}
         alt="Oiseau qui pointe vers le haut pour pouvoir remonter tout en haut de la page"
-        className={cn(rotation, "transition duration-500 ease-in-out transform w-10 h-10 md:w-auto md:h-auto hidden md:block")}
+        className={cn(rotation, "transition duration-500 ease-in-out transform w-10 h-10 md:w-auto md:h-auto")}
       />
     </Button>
   );

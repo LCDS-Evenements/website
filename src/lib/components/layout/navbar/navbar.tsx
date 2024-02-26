@@ -67,7 +67,10 @@ export const Navbar = (): ReactElement => {
               );
             })}
           </div>
-          <ButtonLink href={billetterieLink} variant="hoverSimpleYellow" text="Billetterie" />
+          <ButtonLink href={billetterieLink} variant="hoverSimpleYellow">
+            <span className="hidden md:block text-blue">Billetterie</span>
+            <TicketIcon className="w-6 h-6 md:hidden text-blue" />
+          </ButtonLink>
         </div>
         <div
           className={cn(

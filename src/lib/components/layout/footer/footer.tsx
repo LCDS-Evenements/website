@@ -22,7 +22,9 @@ export const Footer = (): ReactElement => {
           </div>
           <div>
             <p style={{ fontFamily: "Montserrat, sans-serif" }} className="text-blue font-semibold text-lg md:text-xl mb-2 md:mb-4">Prenez vos places !</p>
-            <ButtonLink href={billetterieLink} text="Billetterie" variant="hoverScaleYellow"/>
+            <ButtonLink href={billetterieLink} variant="hoverScaleYellow">
+              Billetterie
+            </ButtonLink>
           </div>
         </div>
         <div className="w-full h-1 md:h-[1%] bg-divider rounded-md"></div>
