@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import type { ReactElement } from "react";
 import Image from "next/image";
 import { ButtonLink } from "@/lib/components/ui/button-link";
@@ -5,7 +6,7 @@ import { billetterieLink } from "@/config/billetterie.config";
 
 const HomeSection = (): ReactElement => {
   return (
-    <section id="#" className="w-screen h-[75vh] md:h-dvh bg-blueWaves bg-no-repeat bg-cover bg-">
+    <section id="#" className="w-screen h-[85vh] md:h-dvh bg-blueWaves bg-no-repeat bg-cover bg-">
       <div className="w-full h-full flex items-center justify-center relative">
         <Image
           src={"./illustration/illustration.svg"}
@@ -15,7 +16,7 @@ const HomeSection = (): ReactElement => {
           loading="lazy"
           alt="Ensemble d'illustrations représentant le style graphique du festival CuicuiteDays"
         />
-        <Image
+        <img
           src={"./illustration/responsive-illustration.svg"}
           height={150}
           width={150}
