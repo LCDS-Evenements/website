@@ -96,42 +96,42 @@ export const ArtistCard: Component<Props> = ({
         </p>
         <div className="w-full flex items-center gap-4">
           {spotifyUrl && (
-            <Link href={spotifyUrl}>
+            <Link href={spotifyUrl} className="hover:scale-125 transition-all">
               <Spotify className="text-bodyBackground" />
             </Link>
           )}
           {youtubeUrl && (
-            <Link href={youtubeUrl}>
+            <Link href={youtubeUrl} className="hover:scale-125 transition-all">
               <Youtube className="text-bodyBackground" />
             </Link>
           )}
           {soundcloudUrl && (
-            <Link href={soundcloudUrl}>
+            <Link href={soundcloudUrl} className="hover:scale-125 transition-all">
               <Soundcloud className="text-bodyBackground" />
             </Link>
           )}
           {instagramUrl && (
-            <Link href={instagramUrl}>
+            <Link href={instagramUrl} className="hover:scale-125 transition-all">
               <Instagram className="text-bodyBackground" />
             </Link>
           )}
           {facebookUrl && (
-            <Link href={facebookUrl}>
+            <Link href={facebookUrl} className="hover:scale-125 transition-all">
               <Facebook className="text-bodyBackground" />
             </Link>
           )}
           {twitterUrl && (
-            <Link href={twitterUrl}>
+            <Link href={twitterUrl} className="hover:scale-125 transition-all">
               <Twitter className="text-bodyBackground" />
             </Link>
           )}
           {tiktokUrl && (
-            <Link href={tiktokUrl}>
+            <Link href={tiktokUrl} className="hover:scale-125 transition-all">
               <Tiktok className="text-bodyBackground" />
             </Link>
           )}
           {threadlUrl && (
-            <Link href={threadlUrl}>
+            <Link href={threadlUrl} className="hover:scale-125 transition-all">
               <Thread className="text-bodyBackground" />
             </Link>
           )}
