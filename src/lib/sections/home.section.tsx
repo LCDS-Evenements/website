@@ -11,7 +11,7 @@ const HomeSection = (): ReactElement => {
           src={"./illustration/illustration.svg"}
           height={150}
           width={150}
-          className="w-[90%] h-[94%] pointer-events-none hidden md:block"
+          className="w-[90%] h-[94%] pointer-events-none hidden md:block 2xl:absolute 2xl:top-[6%]"
           loading="lazy"
           alt="Ensemble d'illustrations représentant le style graphique du festival CuicuiteDays"
         />
