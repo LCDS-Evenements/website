@@ -77,8 +77,8 @@ export const Navbar = (): ReactElement => {
         </div>
         <div
           className={cn(
-            "h-fit rounded-2xl flex flex-col items-end justify-center gap-4 px-4 py-4 fixed top-[4.5rem] right-0 transition-all duration-300",
-            menuIsOpen ? "translate-x-0 opacity-100" : "translate-x-[120%] opacity-0",
+            "h-fit rounded-2xl flex flex-col items-start justify-center gap-4 px-4 py-4 fixed top-[4.5rem] left-0 transition-all duration-300",
+            menuIsOpen ? "translate-x-0 opacity-100" : "-translate-x-[120%] opacity-0",
             background,
           )}
           style={{ boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)" }}
