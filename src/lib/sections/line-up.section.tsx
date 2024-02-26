@@ -22,7 +22,7 @@ const LineUpSection = (): ReactElement => {
   }, [selectedDay]);
 
   return (
-    <section id="lineup" className="w-screen md:min-h-dvh bg-whiteWaves bg-center bg-auto md:bg-cover bg-repeat md:bg-no-repeat px-0 md:px-60 pb-28 md:pb-32 pt-28 md:pt-32 2xl:bg-red-500">
+    <section id="lineup" className="w-screen md:min-h-dvh bg-whiteWaves bg-center bg-auto md:bg-cover bg-repeat md:bg-no-repeat px-0 md:px-60 pb-28 md:pb-32 pt-28 md:pt-32 bg-green-500 md:bg-purple-500 2xl:bg-red-500">
       <h2 className="text-center text-3xl md:text-5xl text-blue mb-8 md:mb-16 uppercase">Line up</h2>
       <div className="w-full">
         <div className="w-full flex items-center justify-center md:justify-start gap-3 mb-8">
@@ -30,7 +30,7 @@ const LineUpSection = (): ReactElement => {
           <Selector text="VENDREDI" />
           <Selector text="SAMEDI" />
         </div>
-        <div className="w-full h-fit flex flex-col items-center justify-center md:grid md:grid-cols-3 gap-8 hidden md:flex 2xl:hidden">
+        <div className="w-full h-fit flex flex-col items-center justify-center md:grid md:grid-cols-3 gap-8 2xl:grid">
           {artistsList.map((artist, idx) => (
             <ArtistCard
               key={idx}
@@ -47,28 +47,6 @@ const LineUpSection = (): ReactElement => {
               twitterUrl={artist.twitterUrl}
               tiktokUrl={artist.tiktokUrl}
               threadlUrl={artist.threadlUrl}
-              className="max-h-fit max-w-full rounded-2xl group bg-transparent"
-            />
-          ))}
-        </div>
-        <div className="w-full h-fit flex flex-col items-center justify-center md:grid md:grid-cols-3 gap-8 md:hidden 2xl:grid">
-          {artistsList.map((artist, idx) => (
-            <ArtistCard
-              key={idx}
-              name={artist.name}
-              bio={artist.bio}
-              day={artist.day}
-              presenceDate={artist.presenceDate}
-              imagePath={artist.imagePath}
-              spotifyUrl={artist.spotifyUrl}
-              youtubeUrl={artist.youtubeUrl}
-              soundcloudUrl={artist.soundcloudUrl}
-              instagramUrl={artist.instagramUrl}
-              facebookUrl={artist.facebookUrl}
-              twitterUrl={artist.twitterUrl}
-              tiktokUrl={artist.tiktokUrl}
-              threadlUrl={artist.threadlUrl}
-              className="h-[70%] w-[70%] rounded-2xl group bg-transparent"
             />
           ))}
         </div>

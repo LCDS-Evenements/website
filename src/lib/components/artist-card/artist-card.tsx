@@ -14,6 +14,8 @@ import Tiktok from "@/lib/components/icons/tiktok";
 import Thread from "@/lib/components/icons/thread";
 import Image from "next/image";
 import Link from "next/link";
+import { useMediaQuery } from "usehooks-ts";
+import { cn } from "@/lib/utils";
 
 export const ArtistCard: Component<Props> = ({
   name,
@@ -26,11 +28,13 @@ export const ArtistCard: Component<Props> = ({
   soundcloudUrl,
   twitterUrl,
   tiktokUrl,
-  threadlUrl,
-  className
+  threadlUrl
 }) => {
   const wrapperRef = useRef<HTMLDivElement>(null);
   const infoRef = useRef<HTMLDivElement>(null);
+
+  const md = useMediaQuery("(min-width: 768px)");
+  const xxl = useMediaQuery("(min-width: 1536px)");
 
   const handleMouseEnter = (): void => {
     if (!wrapperRef.current) return;
@@ -50,10 +54,16 @@ export const ArtistCard: Component<Props> = ({
     infoRef.current.style.opacity = "0";
   };
 
+  console.log(md);
+
   return (
     <div
       style={{ perspective: "2500px" }}
-      className={className}
+      className={cn(
+        "rounded-2xl group bg-transparent w-3/4 h-3/4",
+        md ? "max-w-full max-h-fit w-auto h-auto" : "",
+        xxl ? "max-w-full max-h-fit w-auto h-auto" : "",
+      )}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
