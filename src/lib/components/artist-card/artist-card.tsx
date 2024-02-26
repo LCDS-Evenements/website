@@ -54,8 +54,6 @@ export const ArtistCard: Component<Props> = ({
     infoRef.current.style.opacity = "0";
   };
 
-  console.log(md);
-
   return (
     <div
       style={{ perspective: "2500px" }}
