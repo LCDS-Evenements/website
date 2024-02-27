@@ -1,0 +1,29 @@
+name: Code check
+
+on:
+  push:
+    branches:
+      - env/dev
+      - env/prod
+
+jobs:
+  lint:
+    name: ESLint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v3
+      - name: Install dependencies
+        run: npm install
+      - name: Run ESLint
+        run: npm run lint
+  typecheck:
+    name: Typescript check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v3
+      - name: Install dependencies
+        run: npm install
+      - name: Run Typescript check
+        run: npm run ts:check
