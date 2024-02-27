@@ -75,7 +75,6 @@ export const ArtistCard: Component<Props> = ({
           width={100}
           height={100}
           alt="Photo de l'artiste"
-          loading="lazy"
         />
       </div>
       <div ref={infoRef} className="w-full opacity-0 rounded-md bg-blue/70 bottom-0 p-4 transition-all absolute group-hover:opacity-1">
