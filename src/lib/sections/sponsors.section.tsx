@@ -14,12 +14,12 @@ const SponsorsSection = (): ReactElement => {
   });
 
   const setIsIntersecting = IntersectionSponsorsStore((state) => state.setIsIntersecting);
-  const setAlreadyShown = IntersectionSponsorsStore((state) => state.setAlreadyShown);
 
   useEffect(() => {
     if (isIntersecting) {
       setIsIntersecting(true);
-      setAlreadyShown(true);
+    } else {
+      setIsIntersecting(false);
     }
   }, [isIntersecting]);
 

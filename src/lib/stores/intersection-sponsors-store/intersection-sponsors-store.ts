@@ -3,7 +3,5 @@ import type { IntersectionSponsorsStoreProps } from "./intersection-sponsors-sto
 
 export const IntersectionSponsorsStore = create<IntersectionSponsorsStoreProps>((set) => ({
   isIntersecting: false,
-  setIsIntersecting: (isIntersecting) => set({ isIntersecting }),
-  alreadyShown: false,
-  setAlreadyShown: (alreadyShown) => set({ alreadyShown })
+  setIsIntersecting: (isIntersecting) => set({ isIntersecting })
 }));
