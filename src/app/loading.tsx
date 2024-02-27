@@ -1,10 +1,16 @@
 import type { ReactElement } from "react";
-import { LoaderIcon } from "lucide-react";
+import Image from "next/image";
 
 const Loading = (): ReactElement => {
   return (
-    <section className="h-screen w-screen flex items-center justify-center absolute z-50 bg-blue">
-      <LoaderIcon className="animate-spin w-14 h-14 text-bodyBackground" />
+    <section className="h-screen w-screen flex items-center justify-center absolute z-50 bg-blueWaves bg-cover bg-center bg-no-repeat">
+      <Image
+        src="/illustration/white-logo.svg"
+        alt="Logo"
+        width={200}
+        height={200}
+        className="animate-pulse"
+      />
     </section>
   );
 };
