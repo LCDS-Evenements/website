@@ -1,30 +1,12 @@
-"use client";
-
 /* eslint-disable max-len */
 import { sponsors } from "@/config/sponsors.config";
-import { useEffect, type ReactElement } from "react";
+import { type ReactElement } from "react";
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
-import { useIntersectionObserver } from "usehooks-ts";
-import { IntersectionSponsorsStore } from "../stores/intersection-sponsors-store";
 
 const SponsorsSection = (): ReactElement => {
-  const { isIntersecting, ref } = useIntersectionObserver({
-    threshold: 0.5
-  });
-
-  const setIsIntersecting = IntersectionSponsorsStore((state) => state.setIsIntersecting);
-
-  useEffect(() => {
-    if (isIntersecting) {
-      setIsIntersecting(true);
-    } else {
-      setIsIntersecting(false);
-    }
-  }, [isIntersecting]);
-
   return (
-    <section ref={ref} id="sponsors" className="w-screen md:h-[65dvh] bg-blueWaves bg-no-repeat bg-cover bg-center py-28 px-0 md:px-44">
+    <section id="sponsors" className="w-screen md:h-[65dvh] bg-blueWaves bg-no-repeat bg-cover bg-center py-28 px-0 md:px-44">
       <h2 className="text-center text-3xl md:text-5xl text-bodyBackground mb-4 uppercase">Nos sponsors</h2>
       <p className="text-center text-lg md:text-xl text-bodyBackground mb-16">Ils nous font confiance...</p>
       <div className="w-full display flex items-center justify-center">

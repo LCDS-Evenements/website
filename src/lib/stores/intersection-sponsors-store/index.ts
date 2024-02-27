@@ -1,1 +1,0 @@
-export * from "./intersection-sponsors-store";
