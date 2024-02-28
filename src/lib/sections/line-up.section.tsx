@@ -23,7 +23,7 @@ const LineUpSection = (): ReactElement => {
 
   return (
     <section id="lineup" className="w-screen md:min-h-dvh bg-whiteWaves bg-center bg-auto md:bg-cover bg-repeat md:bg-no-repeat px-0 md:px-60 pb-28 md:pb-32 pt-28 md:pt-32">
-      <h2 className="text-center text-3xl md:text-5xl text-blue mb-8 md:mb-16 uppercase">Line up</h2>
+      <h2 className="text-center text-3xl md:text-5xl text-blue-950 mb-8 md:mb-16 uppercase">Line up</h2>
       <div className="w-full">
         <div className="w-full flex items-center justify-center md:justify-start gap-3 mb-8">
           <Selector text="TOUS" />

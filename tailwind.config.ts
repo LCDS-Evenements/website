@@ -9,7 +9,20 @@ module.exports = {
   ],
   theme: {
     colors: {
-      white: "#F9FAFF"
+      white: "#F9FAFF",
+      blue: {
+        50: "#f2f6fc",
+        100: "#e2ebf7",
+        200: "#ccddf1",
+        300: "#a8c7e8",
+        400: "#7faadb",
+        500: "#608dd1",
+        600: "#4d74c3",
+        700: "#4262b3",
+        800: "#3b5192",
+        900: "#344574",
+        950: "#1b2237"
+      }
     },
     extend: {
       backgroundImage: {
@@ -27,7 +40,6 @@ module.exports = {
         blueBackground: "#1C2235",
         yellowButton: "#FFB003",
         buttonText: "#1B2237",
-        blue: "#1B2237",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
