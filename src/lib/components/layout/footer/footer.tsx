@@ -32,13 +32,13 @@ export const Footer: Component<FooterProps> = ({ className }) => {
         <div className="w-full h-1 md:h-[1%] bg-grey-700 rounded-md"></div>
         <div className="w-full md:h-[20%] flex flex-col md:flex-row items-start md:items-center gap-2 md:gap-0 justify-between relative">
           <div className="flex items-center gap-4">
-            <Link target="_blank" href="https://www.instagram.com/cuicuitedays/" className="hover:bg-divider p-3 rounded-full border-2 border-divider group transition-colors">
+            <Link target="_blank" href="https://www.instagram.com/cuicuitedays/" className="hover:bg-grey-700 p-3 rounded-full border-2 border-bg-grey-700 group transition-colors">
               <Instagram className="text-blue-950 w-5 h-5 group-hover:text-white transition-colors" />
             </Link>
-            <Link target='_blank' href="https://www.facebook.com/people/Les-Cuicuitedays/100089684250095/?mibextid=LQQJ4d" className="hover:bg-divider p-3 rounded-full border-2 border-divider group transition-colors">
+            <Link target='_blank' href="https://www.facebook.com/people/Les-Cuicuitedays/100089684250095/?mibextid=LQQJ4d" className="hover:bg-grey-700 p-3 rounded-full border-2 border-grey-700 group transition-colors">
               <Facebook className="text-blue-950 w-5 h-5 group-hover:text-white transition-colors" />
             </Link>
-            <Link target='_blank' href="https://www.youtube.com/@lescuicuitedays" className="hover:bg-divider p-3 rounded-full border-2 border-divider group transition-colors">
+            <Link target='_blank' href="https://www.youtube.com/@lescuicuitedays" className="hover:bg-grey-700 p-3 rounded-full border-2 border-grey-700 group transition-colors">
               <Youtube className="text-blue-950 w-5 h-5 group-hover:text-white transition-colors" />
             </Link>
           </div>
