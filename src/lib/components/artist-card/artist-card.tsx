@@ -78,10 +78,10 @@ export const ArtistCard: Component<Props> = ({
         />
       </div>
       <div ref={infoRef} className="w-full opacity-0 rounded-md bg-blue/70 bottom-0 p-4 transition-all absolute group-hover:opacity-1">
-        <h3 className="text-3xl text-bodyBackground tracking-wider mb-4">{name}</h3>
+        <h3 className="text-3xl text-white tracking-wider mb-4">{name}</h3>
         <p
           style={{ fontFamily: "Montserrat, sans-serif" }}
-          className="text-sm w-full text-bodyBackground max-h-40 overflow-y-scroll no-scrollbar mb-6"
+          className="text-sm w-full text-white max-h-40 overflow-y-scroll no-scrollbar mb-6"
         >
           {bio.map((paragraph, idx) => (
             <span key={idx}>
@@ -94,42 +94,42 @@ export const ArtistCard: Component<Props> = ({
         <div className="w-full flex items-center gap-4">
           {spotifyUrl && (
             <Link href={spotifyUrl} className="hover:scale-125 transition-all">
-              <Spotify className="text-bodyBackground" />
+              <Spotify className="text-white" />
             </Link>
           )}
           {youtubeUrl && (
             <Link href={youtubeUrl} className="hover:scale-125 transition-all">
-              <Youtube className="text-bodyBackground" />
+              <Youtube className="text-white" />
             </Link>
           )}
           {soundcloudUrl && (
             <Link href={soundcloudUrl} className="hover:scale-125 transition-all">
-              <Soundcloud className="text-bodyBackground" />
+              <Soundcloud className="text-white" />
             </Link>
           )}
           {instagramUrl && (
             <Link href={instagramUrl} className="hover:scale-125 transition-all">
-              <Instagram className="text-bodyBackground" />
+              <Instagram className="text-white" />
             </Link>
           )}
           {facebookUrl && (
             <Link href={facebookUrl} className="hover:scale-125 transition-all">
-              <Facebook className="text-bodyBackground" />
+              <Facebook className="text-white" />
             </Link>
           )}
           {twitterUrl && (
             <Link href={twitterUrl} className="hover:scale-125 transition-all">
-              <Twitter className="text-bodyBackground" />
+              <Twitter className="text-white" />
             </Link>
           )}
           {tiktokUrl && (
             <Link href={tiktokUrl} className="hover:scale-125 transition-all">
-              <Tiktok className="text-bodyBackground" />
+              <Tiktok className="text-white" />
             </Link>
           )}
           {threadlUrl && (
             <Link href={threadlUrl} className="hover:scale-125 transition-all">
-              <Thread className="text-bodyBackground" />
+              <Thread className="text-white" />
             </Link>
           )}
         </div>

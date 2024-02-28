@@ -8,12 +8,8 @@ module.exports = {
     "./src/**/*.{ts,tsx}"
   ],
   theme: {
-    container: {
-      center: true,
-      padding: "2rem",
-      screens: {
-        "2xl": "1400px"
-      }
+    colors: {
+      white: "#F9FAFF"
     },
     extend: {
       backgroundImage: {
@@ -29,8 +25,6 @@ module.exports = {
       colors: {
         divider: "#4A4E5E",
         blueBackground: "#1C2235",
-        bodyBackground: "#F9FAFF",
-        navbarBackground: "#F8FAFF",
         yellowButton: "#FFB003",
         buttonText: "#1B2237",
         blue: "#1B2237",

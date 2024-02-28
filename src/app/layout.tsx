@@ -21,7 +21,7 @@ export const viewport: Viewport = {
 const RootLayout: Component<PropsWithChildren> = ({ children }) => {
   return (
     <html lang="en" className="no-scrollbar scroll-smooth">
-      <body className={cn(magicRetro.className, "bg-bodyBackground overflow-x-hidden h-fit no-scrollbar relative")}>
+      <body className={cn(magicRetro.className, "bg-white overflow-x-hidden h-fit no-scrollbar relative")}>
         <Navbar />
         <ScrollToTop />
         <Suspense fallback={<Loading />}>

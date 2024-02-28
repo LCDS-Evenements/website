@@ -13,7 +13,7 @@ import { MenuIcon, TicketIcon } from "lucide-react";
 
 export const Navbar = (): ReactElement => {
   const [opacity, setOpacity] = useState<string>("");
-  const [background, setBackground] = useState<string>("bg-bodyBackground");
+  const [background, setBackground] = useState<string>("bg-white");
   const [menuIsOpen, setMenuIsOpen] = useState<boolean>(false);
 
   useEffect(() => {
@@ -26,12 +26,12 @@ export const Navbar = (): ReactElement => {
 
       if (scrollPosition >= scrollThreshold) {
         setOpacity("opacity-80");
-        setBackground("bg-bodyBackground/80");
+        setBackground("bg-white/80");
       }
 
       if (scrollPosition < scrollThreshold) {
         setOpacity("");
-        setBackground("bg-bodyBackground");
+        setBackground("bg-white");
       }
     };
 
