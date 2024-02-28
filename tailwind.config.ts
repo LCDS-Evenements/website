@@ -59,11 +59,6 @@ module.exports = {
       backgroundImage: {
         blueWaves: "url('/background/blue-wave-bg.svg')",
         whiteWaves: "url('/background/white-wave-bg.svg')"
-      },
-      borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)"
       }
     }
   },

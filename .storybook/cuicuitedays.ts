@@ -16,7 +16,7 @@ export default create({
   appBg: "#1b2237",
   appContentBg: "#1b2237",
   appBorderColor: "#f9faff",
-  appBorderRadius: 2,
+  appBorderRadius: 6,
 
   textColor: "#f9faff",
   textInverseColor: "red",
