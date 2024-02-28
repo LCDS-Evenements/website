@@ -1,0 +1,48 @@
+import { Meta, Story, Canvas, Title, ColorPalette, ColorItem } from "@storybook/blocks";
+import tailwind from "../../tailwind.config"
+ 
+<Meta title="Theme/Colors" />
+
+<ColorPalette>
+  <ColorItem
+    title="White"
+    subtitle="White color because it's the base color of a theme"
+    colors={{ 
+      "white": tailwind.theme.colors.white,
+    }}
+  />
+
+  <ColorItem
+    title="Gray"
+    subtitle="Different shades of gray"
+    colors={tailwind.theme.colors.grey}
+  />
+
+  <ColorItem
+    title="Blue"
+    subtitle="Different shades of blue, primary is 950"
+    colors={tailwind.theme.colors.blue}
+  />
+
+  <ColorItem
+    title="Yellow"
+    subtitle="Different shades of yellow, primary is 500"
+    colors={tailwind.theme.colors.yellow}
+  />
+
+  <ColorItem
+    title="Destructive"
+    subtitle="For destructive actions"
+    colors={{
+      "desctructive": tailwind.theme.colors.destructive
+    }}
+  />
+
+  <ColorItem
+    title="Success"
+    subtitle="For successful actions"
+    colors={{
+      "sucess": tailwind.theme.colors.success
+    }}
+  />
+</ColorPalette>

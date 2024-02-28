@@ -1,0 +1,92 @@
+import {Meta, Typeset} from "@storybook/blocks"
+
+<Meta title="Theme/Typographie" />
+
+export const montserrat = {
+  type: {
+    primary: '"Montserrat", sans-serif'
+  }, 
+  weight: {
+    regular: "400",
+    bold: "700",
+    extrabold: "800",
+    black: "900"
+  },
+  size: {
+    s1: 12,
+    s2: 14,
+    s3: 16,
+    m1: 20,
+    m2: 24,
+    m3: 28,
+    l1: 32,
+    l2: 40,
+    l3: 48,
+  }
+}
+
+export const magicRetro = {
+  type: {
+    primary: 'Magic Retro, sans-serif'
+  }, 
+  weight: {
+    regular: "400",
+  },
+  size: {
+    s1: 12,
+    s2: 14,
+    s3: 16,
+    m1: 20,
+    m2: 24,
+    m3: 28,
+    l1: 32,
+    l2: 40,
+    l3: 48,
+  }
+}
+
+export const SampleText = "Welcome to the festival Les CuicuiteDays !";
+
+# Typographie
+
+**Font :** Montserrat
+
+**Weight :** 400(regular), 700(bold), 800(extrabold), 900(black)
+
+<Typeset
+  fontSizes={[
+    Number(montserrat.size.s1),
+    Number(montserrat.size.s2),
+    Number(montserrat.size.s3),
+    Number(montserrat.size.m1),
+    Number(montserrat.size.m2),
+    Number(montserrat.size.m3),
+    Number(montserrat.size.l1),
+    Number(montserrat.size.l2),
+    Number(montserrat.size.l3),
+  ]}
+  fontWeight={montserrat.weight.black}
+  sampleText={SampleText}
+  fontFamily={montserrat.type.primary}
+/>
+
+**Font :** Magic Retro
+
+**Weight :** 400(regular)
+
+<Typeset
+  fontSizes={[
+    Number(magicRetro.size.s1),
+    Number(magicRetro.size.s2),
+    Number(magicRetro.size.s3),
+    Number(magicRetro.size.m1),
+    Number(magicRetro.size.m2),
+    Number(magicRetro.size.m3),
+    Number(magicRetro.size.l1),
+    Number(magicRetro.size.l2),
+    Number(magicRetro.size.l3),
+  ]}
+  fontWeight={magicRetro.weight.black}
+  sampleText={SampleText}
+  fontFamily={magicRetro.type.primary}
+/>

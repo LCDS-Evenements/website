@@ -7,6 +7,11 @@
     font-family: 'Montserrat';
     src: url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap');
   }
+
+  @font-face {
+    font-family: "Magic Retro";
+    src: url("../../public/font/Magic Retro.woff2") format("woff2");
+  }
 }
 
 @layer utilities {
