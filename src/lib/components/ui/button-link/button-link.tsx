@@ -9,7 +9,7 @@ export const buttonLinkVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-yellow-500 text-buttonText",
+        default: "bg-yellow-500 text-blue-950",
         hoverScaleYellow: "bg-yellow-500 hover:scale-110",
         hoverSimpleYellow: "bg-yellow-500 hover:bg-yellow-500/80"
       },

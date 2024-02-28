@@ -27,7 +27,7 @@ export const Footer = (): ReactElement => {
             </ButtonLink>
           </div>
         </div>
-        <div className="w-full h-1 md:h-[1%] bg-divider rounded-md"></div>
+        <div className="w-full h-1 md:h-[1%] bg-grey-700 rounded-md"></div>
         <div className="w-full md:h-[20%] flex flex-col md:flex-row items-start md:items-center gap-2 md:gap-0 justify-between relative">
           <div className="flex items-center gap-4">
             <Link target="_blank" href="https://www.instagram.com/cuicuitedays/" className="hover:bg-divider p-3 rounded-full border-2 border-divider group transition-colors">
