@@ -1,7 +1,7 @@
 "use client";
 
 /* eslint-disable max-len */
-import { useEffect, type ReactElement, useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import { ButtonLink } from "@/lib/components/ui/button-link";
 import { NextLink } from "@/lib/components/ui/link";
@@ -10,8 +10,10 @@ import { navbarLinks } from "@/config/navbar.config";
 import { billetterieLink } from "@/config/billetterie.config";
 import Link from "next/link";
 import { MenuIcon, TicketIcon } from "lucide-react";
+import type { Component } from "@/lib/utils/component";
+import type { NavbarProps } from "./navbar.type";
 
-export const Navbar = (): ReactElement => {
+export const Navbar: Component<NavbarProps> = ({ className }) => {
   const [opacity, setOpacity] = useState<string>("");
   const [background, setBackground] = useState<string>("bg-white");
   const [menuIsOpen, setMenuIsOpen] = useState<boolean>(false);
@@ -50,6 +52,7 @@ export const Navbar = (): ReactElement => {
           cn(
             "h-[60px] w-[90%] md:w-[96%] rounded-[50px] fixed top-6 md:top-8 left-1/2 -translate-x-1/2 flex items-center justify-center z-50 transition-all duration-300 backdrop-blur-sm group/navbar",
             background,
+            className
           )
         }
       >

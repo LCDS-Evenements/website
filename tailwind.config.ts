@@ -53,7 +53,8 @@ module.exports = {
       success: "#10b981"
     },
     fontFamily: {
-      montserrat: ["Montserrat", "sans-serif"]
+      montserrat: ["Montserrat", "sans-serif"],
+      magicRetro: ["Magic Retro", "sans-serif"]
     },
     extend: {
       backgroundImage: {

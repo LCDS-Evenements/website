@@ -11,7 +11,7 @@ export default create({
   fontCode: "monospace",
 
   colorPrimary: "#ffb003",
-  colorSecondary: "#1b2237",
+  colorSecondary: "#f3b33f",
 
   appBg: "#1b2237",
   appContentBg: "#1b2237",
@@ -26,8 +26,8 @@ export default create({
   barSelectedColor: "#ffb003",
   barBg: "#1b2237",
 
-  inputBg: "red",
-  inputBorder: "green",
-  inputTextColor: "purple",
+  inputBg: "#1b2237",
+  inputBorder: "#f9faff",
+  inputTextColor: "#f9faff",
   inputBorderRadius: 2,
 });
