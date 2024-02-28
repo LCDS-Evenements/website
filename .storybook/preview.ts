@@ -1,8 +1,13 @@
 import type { Preview } from "@storybook/react";
 import "../src/app/globals.css";
+import cuicuitedays from "./cuicuitedays";
 
 const preview: Preview = {
   parameters: {
+    docs: {
+      theme: cuicuitedays
+    },
+
     actions: { argTypesRegex: "^on[A-Z].*" },
 
     controls: {
