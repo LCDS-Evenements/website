@@ -9,9 +9,9 @@ export const buttonLinkVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-yellowButton text-buttonText",
-        hoverScaleYellow: "bg-yellowButton hover:scale-110",
-        hoverSimpleYellow: "bg-yellowButton hover:bg-yellowButton/80"
+        default: "bg-yellow-500 text-buttonText",
+        hoverScaleYellow: "bg-yellow-500 hover:scale-110",
+        hoverSimpleYellow: "bg-yellow-500 hover:bg-yellow-500/80"
       },
       size: {
         default: "px-5 py-2 text-md md:text-xl"

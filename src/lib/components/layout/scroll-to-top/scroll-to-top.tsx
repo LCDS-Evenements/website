@@ -41,7 +41,7 @@ export const ScrollToTop = (): ReactElement => {
   };
 
   return (
-    <Button onClick={handleClick} className="rounded-full bg-yellowButton flex items-center justify-center fixed bottom-6 right-6 md:bottom-12 md:right-20 z-50 p-2">
+    <Button onClick={handleClick} className="rounded-full bg-yellow-500 flex items-center justify-center fixed bottom-6 right-6 md:bottom-12 md:right-20 z-50 p-2">
       <Image
         src={"./illustration/bird.svg"}
         height={50}

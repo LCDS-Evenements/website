@@ -42,9 +42,9 @@ export const Footer = (): ReactElement => {
           </div>
           <p style={{ fontFamily: "Montserrat, sans-serif" }} className="md:absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 text-blue-950 text-base md:text-lg font-light">
             Design by
-            <Link href="https://linkedin.com/in/antoine-gervais-2475911aa" target="_blank" className="text-yellowButton"> Antoine GERVAIS </Link>
+            <Link href="https://linkedin.com/in/antoine-gervais-2475911aa" target="_blank" className="text-yellow-500"> Antoine GERVAIS </Link>
             and developped by
-            <Link href="https://hcampos.fr" target="_blank" className="text-yellowButton"> Hugo CAMPOS</Link>
+            <Link href="https://hcampos.fr" target="_blank" className="text-yellow-500"> Hugo CAMPOS</Link>
           </p>
           <p style={{ fontFamily: "Montserrat, sans-serif" }} className="text-base md:text-lg font-light text-blue-950">© LesCuicuiteDays</p>
         </div>

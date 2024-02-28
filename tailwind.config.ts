@@ -22,6 +22,19 @@ module.exports = {
         800: "#3b5192",
         900: "#344574",
         950: "#1b2237"
+      },
+      yellow: {
+        50: "#fffdea",
+        100: "#fff7c5",
+        200: "#fff085",
+        300: "#ffe246",
+        400: "#ffd01b",
+        500: "#ffb003",
+        600: "#e28500",
+        700: "#bb5d02",
+        800: "#984708",
+        900: "#7c3b0b",
+        950: "#481d00"
       }
     },
     extend: {
@@ -38,7 +51,6 @@ module.exports = {
       colors: {
         divider: "#4A4E5E",
         blueBackground: "#1C2235",
-        yellowButton: "#FFB003",
         buttonText: "#1B2237",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

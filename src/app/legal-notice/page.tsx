@@ -11,21 +11,21 @@ const LegalNotice = (): ReactElement => {
           <h4 className="text-2xl text-white mb-4">Identité</h4>
           <p className="text-lg text-white" style={{ fontFamily: "Montserrat, sans-serif" }}>
             Le site www.cuicuitedays.fr (ci-après dénommé le « Site ») est édité et exploité par l&apos;association LCDS Evenements (ci-après dénommée « LCDS Evenements »), association loi 1901, représentée par M. Augustin FOUILLET, en qualité de Président.<br />
-            Reponsable de la publication : M. Hugo CAMPOS, <Link className="text-yellowButton" href="mailto:hcampospro@gmail.com">hcampospro@gmail.com</Link>.
+            Reponsable de la publication : M. Hugo CAMPOS, <Link className="text-yellow-500" href="mailto:hcampospro@gmail.com">hcampospro@gmail.com</Link>.
           </p>
         </div>
         <div>
           <h4 className="text-2xl text-white mb-4">Contact</h4>
           <p className="text-lg text-white" style={{ fontFamily: "Montserrat, sans-serif" }}>
-            Notre service de relations clients est joignable à l&apos;adresse mail suivante : <Link className="text-yellowButton" href="mailto:communication.cuicuitedays@gmail.com">communication.cuicuitedays@gmail.com</Link>
+            Notre service de relations clients est joignable à l&apos;adresse mail suivante : <Link className="text-yellow-500" href="mailto:communication.cuicuitedays@gmail.com">communication.cuicuitedays@gmail.com</Link>
           </p>
         </div>
         <div>
           <h4 className="text-2xl text-white mb-4">Hébergeur</h4>
           <p className="text-lg text-white" style={{ fontFamily: "Montserrat, sans-serif" }}>
-            L’hébergement du site est assuré par : <Link className="text-yellowButton" target="_blank" href="https://github.com">GitHub</Link>.<br />
-            Le deploiement du site est assuré par : <Link className="text-yellowButton" target="_blank" href="https://vercel.com">Vercel</Link> Inc, 440 N Barranca Ave #4133, Covina, CA 91723.<br />
-            Le nom de domaine est attribuer par <Link className="text-yellowButton" target="_blank" href="https://ovhcloud.com">OVH</Link>, 2 rue Kellermann, 59100 Roubaix, France.
+            L’hébergement du site est assuré par : <Link className="text-yellow-500" target="_blank" href="https://github.com">GitHub</Link>.<br />
+            Le deploiement du site est assuré par : <Link className="text-yellow-500" target="_blank" href="https://vercel.com">Vercel</Link> Inc, 440 N Barranca Ave #4133, Covina, CA 91723.<br />
+            Le nom de domaine est attribuer par <Link className="text-yellow-500" target="_blank" href="https://ovhcloud.com">OVH</Link>, 2 rue Kellermann, 59100 Roubaix, France.
           </p>
         </div>
         <div>
