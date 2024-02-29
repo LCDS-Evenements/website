@@ -51,5 +51,9 @@ export const sponsors: Sponsor[] = [
   {
     name: "MP Sonorisation logo",
     imgPath: "/sponsors/mp-sonorisation.webp"
+  },
+  {
+    name: "Crédit Mutuelle logo",
+    imgPath: "/sponsors/credit-mutuelle.webp"
   }
 ];
