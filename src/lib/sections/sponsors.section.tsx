@@ -1,7 +1,6 @@
 /* eslint-disable max-len */
 import { sponsors } from "@/config/sponsors.config";
 import { type ReactElement } from "react";
-import Image from "next/image";
 import Marquee from "react-fast-marquee";
 
 const SponsorsSection = (): ReactElement => {
@@ -13,7 +12,7 @@ const SponsorsSection = (): ReactElement => {
         <Marquee className="w-full" gradient speed={60} gradientColor="#1B2237">
           {sponsors.map((sponsor, idx) => (
             <div key={idx} className="bg-whiteWaves bg-white bg-no-repeat bg-cover bg-center rounded-full h-40 w-40 mx-6 flex items-center justify-center group">
-              <Image src={sponsor.imgPath} placeholder="blur" blurDataURL={sponsor.imgPath} alt={sponsor.name} width={90} height={90} />
+              <img src={sponsor.imgPath} alt={sponsor.name} width={90} height={90} />
             </div>
           ))}
         </Marquee>
