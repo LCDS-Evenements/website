@@ -13,7 +13,7 @@ const SponsorsSection = (): ReactElement => {
         <Marquee className="w-full" gradient speed={60} gradientColor="#1B2237">
           {sponsors.map((sponsor, idx) => (
             <div key={idx} className="bg-whiteWaves bg-white bg-no-repeat bg-cover bg-center rounded-full h-40 w-40 mx-6 flex items-center justify-center group">
-              <Image src={sponsor.imgPath} loading="lazy" placeholder="blur" blurDataURL={sponsor.imgPath} alt={sponsor.name} width={90} height={90} />
+              <Image src={sponsor.imgPath} placeholder="blur" blurDataURL={sponsor.imgPath} alt={sponsor.name} width={90} height={90} />
             </div>
           ))}
         </Marquee>
