@@ -4,7 +4,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { ButtonLink } from "@/lib/components/ui/button-link";
-import { NextLink } from "@/lib/components/ui/link";
+import { CustomLink } from "@/lib/components/ui/link";
 import { cn } from "@/lib/utils";
 import { navbarLinks } from "@/config/navbar.config";
 import { billetterieLink } from "@/config/billetterie.config";
@@ -69,7 +69,7 @@ export const Navbar: Component<NavbarProps> = ({ className }) => {
               if (link.display === false) return null;
 
               return (
-                <NextLink href={link.href} text={link.text} key={idx} />
+                <CustomLink href={link.href} text={link.text} key={idx} />
               );
             })}
           </div>
@@ -90,7 +90,7 @@ export const Navbar: Component<NavbarProps> = ({ className }) => {
             if (link.display === false) return null;
 
             return (
-              <NextLink onClick={() => setMenuIsOpen(false)} href={link.href} text={link.text} key={idx} />
+              <CustomLink onClick={() => setMenuIsOpen(false)} href={link.href} text={link.text} key={idx} />
             );
           })}
         </div>
