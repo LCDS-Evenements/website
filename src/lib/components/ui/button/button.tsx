@@ -4,7 +4,7 @@ import { cva } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
 export const buttonVariants = cva(
-  "rounded-[50px] text-center transition-all duration-300 cursor-pointer",
+  "rounded-[50px] text-center transition-all duration-300 cursor-pointer font-magicRetro",
   {
     variants: {
       variant: {
