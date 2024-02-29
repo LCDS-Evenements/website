@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
+import { action } from "@storybook/addon-actions";
 
 import { CustomLink } from "./link";
 
@@ -17,7 +18,8 @@ const meta: Meta<typeof CustomLink> = {
     },
     onClick: {
       description: "The function to call when the link is clicked",
-      control: "function"
+      control: "function",
+      action: "clicked"
     }
   }
 };
@@ -29,6 +31,6 @@ export const Default: Story = {
   args: {
     href: "https://cuicuitedays.fr",
     text: "Custom link",
-    onClick: () => console.log("Custom link clicked")
+    onClick: action("clicked")
   }
 };

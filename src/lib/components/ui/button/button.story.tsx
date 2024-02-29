@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
 import { Button } from "./button";
+import { action } from "@storybook/addon-actions";
 
 const meta: Meta<typeof Button> = {
   title: "UI/Button",
@@ -31,7 +32,8 @@ const meta: Meta<typeof Button> = {
     },
     onClick: {
       description: "The function to call when the button is clicked",
-      control: "function"
+      control: "function",
+      action: "clicked"
     }
   }
 };
@@ -42,6 +44,6 @@ type Story = StoryObj<typeof Button>;
 export const Default: Story = {
   args: {
     children: "Button",
-    onClick: () => console.log("Button clicked")
+    onClick: action("clicked")
   }
 };
