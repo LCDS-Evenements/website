@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 
 export const buttonLinkVariants = cva(
-  "rounded-[50px] text-center transition-all duration-300 cursor-pointer",
+  "rounded-[50px] text-center transition-all duration-300 cursor-pointer font-magicRetro",
   {
     variants: {
       variant: {
@@ -14,7 +14,9 @@ export const buttonLinkVariants = cva(
         hoverSimpleYellow: "bg-yellow-500 hover:bg-yellow-500/80"
       },
       size: {
-        default: "px-5 py-2 text-md md:text-xl"
+        default: "px-5 py-2 text-md md:text-xl",
+        small: "px-3 py-1 text-sm md:text-md",
+        large: "px-7 py-3 text-lg md:text-2xl"
       }
     },
     defaultVariants: {
@@ -24,7 +26,7 @@ export const buttonLinkVariants = cva(
   }
 );
 
-export const ButtonLink: Component<Props> = ({  href, className, variant, size, children, ...rest }) => {
+export const ButtonLink: Component<Props> = ({ href, className, variant, size, children, ...rest }) => {
   return (
     <Link target="_blank" href={href}>
       <button {...rest} style={{ boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)" }} className={cn(className, buttonLinkVariants({ variant, size }))}>
