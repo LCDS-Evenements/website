@@ -9,6 +9,7 @@ import { Footer } from "@/lib/components/layout/footer";
 import type { Viewport } from "next";
 import { Suspense } from "react";
 import Loading from "./loading";
+import { Analytics } from "@vercel/analytics/react";
 
 const magicRetro = localFont({ src: "../../public/font/Magic Retro.woff2" });
 
@@ -28,6 +29,7 @@ const RootLayout: Component<PropsWithChildren> = ({ children }) => {
           {children}
         </Suspense>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
