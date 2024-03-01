@@ -16,10 +16,10 @@ export const sponsors: Sponsor[] = [
     name: "EGDC logo",
     imgPath: "/sponsors/egdc.webp"
   },
-  {
-    name: "OGS logo",
-    imgPath: "/sponsors/ogs.webp"
-  },
+  // {
+  //   name: "OGS logo",
+  //   imgPath: "/sponsors/ogs.webp"
+  // },
   {
     name: "Pavillon du Bocage logo",
     imgPath: "/sponsors/pavillon.webp"
@@ -55,5 +55,17 @@ export const sponsors: Sponsor[] = [
   {
     name: "Crédit Mutuelle logo",
     imgPath: "/sponsors/credit-mutuelle.webp"
+  },
+  {
+    name: "Domaine Angelou logo",
+    imgPath: "/sponsors/domaine-angelou.webp"
+  },
+  {
+    name: "Baron logo",
+    imgPath: "/sponsors/baron.webp"
   }
+  // {
+  //   name: "BS Production logo",
+  //   imgPath: "/sponsors/bs-production.webp"
+  // }
 ];
