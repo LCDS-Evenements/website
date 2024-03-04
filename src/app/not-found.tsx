@@ -15,8 +15,16 @@ const NotFound = (): ReactElement => {
           loading="lazy"
           alt="Ensemble d'illustrations représentant le style graphique du festival CuicuiteDays"
         />
-        <div className="z-40 flex items-center md:items-start justify-center flex-col absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:top-[35%] md:left-32 gap-6">
-          <h2 className="text-white text-3xl md:text-4xl">PAGE INTROUVABLE</h2>
+        <Image
+          src={"./illustration/responsive-error-illustration.svg"}
+          height={150}
+          width={150}
+          className="w-[90%] h-full pointer-events-none block md:hidden"
+          loading="lazy"
+          alt="Ensemble d'illustrations représentant le style graphique du festival CuicuiteDays"
+        />
+        <div className="z-40 flex items-center flex md:items-start justify-center flex-col absolute top-[30%] md:top-[35%] md:left-32 gap-6">
+          <h2 className="text-white text-2xl md:text-4xl uppercase">Page introuvable</h2>
           <p
             style={{ fontFamily: "Montserrat, sans-serif" }}
             className="text-white text-center text-sm md:text-lg font-thin tracking-wider max-w-[80%] md:max-w-full"
