@@ -1,6 +1,7 @@
 export type Sponsor = {
   name: string;
   imgPath: string;
+  className?: string;
 }
 
 export const sponsors: Sponsor[] = [
@@ -63,9 +64,10 @@ export const sponsors: Sponsor[] = [
   {
     name: "Baron logo",
     imgPath: "/sponsors/baron.webp"
+  },
+  {
+    name: "BS Production logo",
+    imgPath: "/sponsors/bs-production.webp",
+    className: "h-[50%]"
   }
-  // {
-  //   name: "BS Production logo",
-  //   imgPath: "/sponsors/bs-production.webp"
-  // }
 ];
