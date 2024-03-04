@@ -23,7 +23,7 @@ export const content: Content[] = [
   {
     title: "L'origine",
     description: [
-      "À l'origine Les CuicuiteDays était un évenement privé qui avait pour but de réunir des copains qui partait dans différentes villes pour leurs études 🪩.",
+      "À l'origine Les CuicuiteDays était un évenement privé qui avait pour but de réunir des copains qui partaient dans différentes villes pour leurs études 🪩.",
       "Puis au fil du temps de plus en plus de gens ont voulu participer à l'évenement, et c'est comme ça que le festival est né 🎈 !"
     ]
   }
