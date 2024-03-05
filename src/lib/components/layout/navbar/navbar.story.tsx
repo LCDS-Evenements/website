@@ -4,6 +4,7 @@ import { Navbar } from "./navbar";
 
 const meta: Meta<typeof Navbar> = {
   title: "Layout/Navbar",
+  tags: ["autodocs"],
   component: Navbar,
   argTypes: {
     className: {

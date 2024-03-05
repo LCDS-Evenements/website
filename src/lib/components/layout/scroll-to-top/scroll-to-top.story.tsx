@@ -4,6 +4,7 @@ import { ScrollToTop } from "./scroll-to-top";
 
 const meta: Meta<typeof ScrollToTop> = {
   title: "Layout/Scroll to top",
+  tags: ["autodocs"],
   component: () => (
     <div className="w-screen h-[150vh]">
       <ScrollToTop />

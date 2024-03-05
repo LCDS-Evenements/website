@@ -4,6 +4,7 @@ import { Footer } from "./footer";
 
 const meta: Meta<typeof Footer> = {
   title: "Layout/Footer",
+  tags: ["autodocs"],
   component: () => (
     <div className="w-fit h-fit bg-white">
       <Footer />
