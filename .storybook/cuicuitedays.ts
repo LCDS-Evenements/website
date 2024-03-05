@@ -4,7 +4,7 @@ export default create({
   base: "dark",
   brandTitle: "CCDAYS | UI Kit",
   brandUrl: "https://cuicuitedays.fr",
-  brandImage: "https://cuicuitedays.fr/logo.png",
+  brandImage: "./illustration/white-logo.svg",
   brandTarget: "_blank",
 
   fontBase: "Montserrat, sans-serif",
