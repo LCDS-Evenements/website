@@ -45,3 +45,19 @@ export const Default: Story = {
     href: "https://cuicuitedays.fr"
   }
 };
+
+export const HoverScale: Story = {
+  args: {
+    children: "Button link",
+    variant: "hoverScaleYellow",
+    href: "https://cuicuitedays.fr"
+  }
+};
+
+export const HoverSimple: Story = {
+  args: {
+    children: "Button link",
+    variant: "hoverSimpleYellow",
+    href: "https://cuicuitedays.fr"
+  }
+};

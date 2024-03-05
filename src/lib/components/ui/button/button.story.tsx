@@ -47,3 +47,19 @@ export const Default: Story = {
     onClick: action("clicked")
   }
 };
+
+export const HoverScale: Story = {
+  args: {
+    children: "Button",
+    variant: "hoverScaleYellow",
+    onClick: action("clicked")
+  }
+};
+
+export const HoverSimple: Story = {
+  args: {
+    children: "Button",
+    variant: "hoverSimpleYellow",
+    onClick: action("clicked")
+  }
+};
