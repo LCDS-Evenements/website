@@ -78,7 +78,7 @@ export const ArtistCard: Component<Props> = ({
         />
       </div>
       <div ref={infoRef} className="w-full opacity-0 rounded-md bg-blue-950/70 bottom-0 p-4 transition-all absolute group-hover:opacity-1">
-        <h3 className="text-3xl text-white tracking-wider mb-4">{name}</h3>
+        <h3 className="text-3xl text-white tracking-wider mb-4 font-magicRetro">{name}</h3>
         <p
           style={{ fontFamily: "Montserrat, sans-serif" }}
           className="text-sm w-full text-white max-h-40 overflow-y-scroll no-scrollbar mb-6"
