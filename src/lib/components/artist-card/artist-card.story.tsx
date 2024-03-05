@@ -1,5 +1,6 @@
 /* eslint-disable max-len */
-import type { Meta, StoryObj } from "@storybook/react";
+import type { StoryFn } from "@storybook/react";
+import type { Meta } from "@storybook/react";
 
 import { ArtistCard } from "./artist-card";
 
@@ -15,24 +16,18 @@ const defaultArtist = {
   tiktokUrl: "https://cuicuitedays.fr"
 };
 
-const meta: Meta<typeof ArtistCard> = {
+export default {
   title: "Other/ArtistCard",
-  component: () => (
-    <div className="h-1/3 w-1/3">
-      <ArtistCard {...defaultArtist} />
-    </div>
-  ),
-  tags: ["autodocs"],
-  argTypes: {
+  component: ArtistCard
+} satisfies Meta<typeof ArtistCard>;
 
-  }
-};
+// Template:
+const Template: StoryFn<typeof ArtistCard> = (props) => (
+  <div className="h-1/3 w-1/3">
+    <ArtistCard {...props} />
+  </div>
+);
 
-export default meta;
-type Story = StoryObj<typeof ArtistCard>;
-
-export const Default: Story = {
-  args: {
-    ...defaultArtist
-  }
-};
+// Stories:
+export const Default = Template.bind({});
+Default.args = { ...defaultArtist };
