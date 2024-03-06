@@ -13,7 +13,7 @@ export default create({
   colorPrimary: "#ffb003",
   colorSecondary: "#f3b33f",
 
-  appBg: "#1b2237",
+  appBg: "#151929",
   appContentBg: "#1b2237",
   appBorderColor: "#f9faff",
   appBorderRadius: 4,
@@ -24,7 +24,7 @@ export default create({
   barTextColor: "#f9faff",
   barHoverColor: "#ffb003",
   barSelectedColor: "#ffb003",
-  barBg: "#1b2237",
+  barBg: "#151929",
 
   inputBg: "#1b2237",
   inputBorder: "#f9faff",
