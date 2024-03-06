@@ -86,5 +86,15 @@ export const sponsors: Sponsor[] = [
     imgPath: "/sponsors/bs-production.webp",
     className: "h-[50%]",
     href: "https://www.baptiste-save.fr/"
+  },
+  {
+    name: "Clochard Dolor logo",
+    imgPath: "/sponsors/clochard-dolor.webp",
+    href: "https://clochard-dolor.fr/"
+  },
+  {
+    name: "Fauteuil Rouge logo",
+    imgPath: "/sponsors/fauteuil-rouge.webp",
+    href: "https://lefauteuilrouge.fr/"
   }
 ];
