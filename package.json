@@ -1,10 +1,10 @@
 {
-  "name": "nextjs-template",
-  "version": "0.1.0",
-  "private": true,
-  "prisma": {
-    "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} src/lib/utils/prisma/seed.ts"
-  },
+  "name": "CuicuiteDays Website",
+  "version": "1.0.0",
+  "description": "CuicuiteDays Website",
+  "repository": "https://github.com/LCDS-Evenements/website",
+  "author": "hcampos",
+  "private": false,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -13,7 +13,8 @@
     "lint:fix": "next lint --fix",
     "ts:check": "tsc --noEmit",
     "sb:dev": "storybook dev -p 6006",
-    "sb:build": "storybook build"
+    "sb:build": "storybook build",
+    "test:unit": "vitest --ui"
   },
   "dependencies": {
     "@bluzzi/eslint-config": "^1.2.1",
@@ -54,6 +55,7 @@
     "eslint": "^8.56.0",
     "eslint-config-next": "14.0.2",
     "eslint-plugin-storybook": "^0.8.0",
+    "happy-dom": "^13.6.2",
     "polished": "^4.3.1",
     "postcss": "^8.4.33",
     "storybook": "^7.6.17",
