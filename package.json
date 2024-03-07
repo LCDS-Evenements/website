@@ -1,7 +1,7 @@
 {
-  "name": "CuicuiteDays Website",
+  "name": "@lcds-evenements/website",
   "version": "1.0.0",
-  "description": "CuicuiteDays Website",
+  "description": "Website of the festival Les CuicuiteDays",
   "repository": "https://github.com/LCDS-Evenements/website",
   "author": "hcampos",
   "private": false,
@@ -14,7 +14,9 @@
     "ts:check": "tsc --noEmit",
     "sb:dev": "storybook dev -p 6006",
     "sb:build": "storybook build",
-    "test:unit": "vitest --ui"
+    "test:unit": "vitest --ui",
+    "test:ui": "playwright test -c playwright-unit.config.ts",
+    "test:e2e": "playwright test"
   },
   "dependencies": {
     "@bluzzi/eslint-config": "^1.2.1",

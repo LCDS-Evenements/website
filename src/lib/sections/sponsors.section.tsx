@@ -13,7 +13,7 @@ const SponsorsSection = (): ReactElement => {
       <p className="text-center text-lg md:text-xl text-white mb-16">Ils nous font confiance...</p>
       <div className="w-full display flex items-center justify-center">
         <Marquee className="w-full" gradient speed={80} gradientColor="#1B2237">
-          {randomizeArray(sponsors).map((sponsor, idx) => (
+          {randomizeArray(sponsors)!.map((sponsor, idx) => (
             <Link href={sponsor.href} target="_blank" key={idx} className="bg-whiteWaves bg-white bg-no-repeat bg-cover bg-center rounded-full h-40 w-40 mx-6 flex items-center justify-center group">
               <img src={sponsor.imgPath} alt={sponsor.name} width={90} height={90} className={cn("max-w-full h-auto group-hover:scale-105 transition-all duration-500", sponsor.className)} />
             </Link>
