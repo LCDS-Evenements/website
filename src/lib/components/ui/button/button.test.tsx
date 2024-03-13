@@ -20,4 +20,12 @@ test.describe("UI/Button", () => {
 
     await expect(component).toContainText("Button");
   });
+
+  test("should render button with custom class", async({ mount }) => {
+    const component = await mount(
+      <Button className="custom-class">Button</Button>
+    );
+
+    await expect(component).toHaveClass("custom-class");
+  });
 });
