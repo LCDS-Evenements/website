@@ -24,7 +24,7 @@ export const Footer: Component<FooterProps> = ({ className }) => {
           </div>
           <div>
             <p style={{ fontFamily: "Montserrat, sans-serif" }} className="text-blue-950 font-semibold text-lg md:text-xl mb-2 md:mb-4">Prenez vos places !</p>
-            <ButtonLink href={billetterieLink} variant="hoverScaleYellow">
+            <ButtonLink target="_blank" href={billetterieLink} variant="hoverScaleYellow">
               Billetterie
             </ButtonLink>
           </div>

@@ -73,7 +73,7 @@ export const Navbar: Component<NavbarProps> = ({ className }) => {
               );
             })}
           </div>
-          <ButtonLink href={billetterieLink} variant="hoverSimpleYellow">
+          <ButtonLink target="_blank" href={billetterieLink} variant="hoverSimpleYellow">
             <span className="hidden md:block text-blue-950">Billetterie</span>
             <TicketIcon className="w-6 h-6 md:hidden text-blue-950" />
           </ButtonLink>
