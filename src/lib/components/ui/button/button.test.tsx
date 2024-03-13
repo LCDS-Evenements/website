@@ -1,7 +1,7 @@
 import { expect, test } from "@playwright/experimental-ct-react";
 import { Button } from ".";
 
-test.describe("Button", () => {
+test.describe("UI/Button", () => {
   test("update variable on click", async({ mount }) => {
     let clicked = false;
     const component = await mount(
