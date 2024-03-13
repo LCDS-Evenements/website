@@ -1,0 +1,151 @@
+{
+  // Suppression de la sauvegarde automatique :
+  "files.autoSave": "off",
+  
+  // Taille des tabulations par défaut :
+  "editor.tabSize": 2,
+  
+  // Linting & formatting on save :
+  "[prisma]": {
+    "editor.formatOnSave": true,
+  },
+
+  "prettier.enable": false,
+  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  
+  // Retour à la ligne activer par default et modification de l'indentation de celle-ci :
+  "editor.wordWrap": "bounded",
+  "editor.wrappingIndent": "indent",
+  "editor.wordWrapColumn": 150,
+  
+  // Position et couleur de la ligne de limitation de taille du code :
+  "editor.rulers": [
+    {
+      "column": 150,
+      "color": "#b1b1b127"
+    }
+  ],
+  
+  // Changement automatique des imports quand on change un fichier de place :
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+
+  // Style:
+  "editor.fontFamily": "JetBrains Mono, Consolas, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 13,
+  "editor.lineHeight": 1.65,
+  "editor.guides.bracketPairs": true,
+  "editor.cursorBlinking": "phase",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "markdown-preview-enhanced.previewTheme": "atom-material.css",
+  "editor.minimap.enabled": false,
+  "workbench.iconTheme": "catppuccin-mocha",
+  
+  // Edition automatique des balises liés :
+  "editor.linkedEditing": true,
+
+  // Tailwind:
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+  "tailwindCSS.classAttributes": [
+    "class",
+    "className",
+    "ngClass",
+    ".*Styles",
+    ".*styles",
+  ],
+  "tailwindCSS.experimental.classRegex": [
+    ["clsx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+  ],
+  "tailwindCSS.lint.cssConflict" : "ignore",
+  
+  // Fichiers et dossiers masquer de l'exploreur : 
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/node_modules": true,
+    "**/deploy": true,
+    "**/.vscode": true,
+    "**/package-lock.json": true,
+    "**/build": true,
+    "**/.next": true,
+    "**.d.ts": true,
+    "**/temp": true,
+    "**/.svelte-kit": true,
+    "**/dist": true,
+    "**/next-env.d.ts": true,
+    "**/.strapi-updater.json": true,
+    "**/pnpm-lock.yaml": true,
+    "**/tsconfig.tsbuildinfo": true,
+    "**/playwright-report": true,
+    "**/test-results": true,
+    "**/.idea": true,
+    "**/storybook-static": true,
+    "**/vite-env.d.ts": true,
+    "**/.react-email": true,
+    "**/.turbo": true,
+    "**/deno.lock": true,
+  },
+  
+  // Exludes files & folders in search indexing :
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/env": true,
+    "**/venv": true
+  },
+
+  // Exludes files & folders for watcher service :
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true,
+    "**/env/**": true,
+    "**/venv/**": true,
+    "env-*": true
+  },
+
+  // Git :
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+  "git.ignoreRebaseWarning": true,
+  "git.autofetch": true,
+
+  // Confirmation de suppression de fichier :
+  "explorer.confirmDelete": false,
+
+  // Shell:
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+
+  // Inlay hints:
+  "editor.inlayHints.enabled": "on",
+  "typescript.inlayHints.parameterNames.enabled": "all",
+  "javascript.inlayHints.parameterNames.enabled": "all",
+  "typescript.inlayHints.parameterNames.suppressWhenArgumentMatchesName": true,
+  "javascript.inlayHints.parameterNames.suppressWhenArgumentMatchesName": true,
+
+  // Disable Sticky Scroll:
+  "editor.stickyScroll.scrollWithEditor": false,
+  "workbench.tree.enableStickyScroll": false,
+  "editor.stickyScroll.enabled": false,
+  
+  // Playwright: 
+  "playwright.reuseBrowser": true,
+  "playwright.showTrace": false,
+
+  // Divers:
+  "editor.inlineSuggest.enabled": true,
+  "explorer.confirmDragAndDrop": false,
+  "window.commandCenter": false,
+  "git.openRepositoryInParentFolders": "always",
+  "workbench.colorTheme": "Bearded Theme Monokai Stone",
+}
