@@ -29,7 +29,7 @@ const HomeSection = (): ReactElement => {
           >
             RÉSERVEZ DÈS MAINTENANT SUR NOTRE BILLETTERIE !
           </h4>
-          <ButtonLink target="_blank" href={billetterieLink} className="z-50" variant="hoverScaleYellow">
+          <ButtonLink data-testid="billetterie-button-2" target="_blank" href={billetterieLink} className="z-50" variant="hoverScaleYellow">
             Prenez-vos places !
           </ButtonLink>
         </div>
