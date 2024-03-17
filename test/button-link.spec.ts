@@ -1,6 +1,8 @@
 import { test, expect } from "@playwright/test";
 import { billetterieLink } from "@/config/billetterie.config";
 
+//TODO: Check the code
+
 test.describe("ButtonLink", ()  => {
   test("button link in the navbar should go to the shop", async({ page, context }) => {
     await page.goto("/");
