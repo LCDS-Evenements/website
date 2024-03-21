@@ -2,7 +2,7 @@ import { billetterieLink } from "@/config/billetterie.config";
 import { expect, test } from "@playwright/test";
 
 //TODO: Add flow to check if sponsors button go to the sponsors page
-//Test sign commit
+//Test sign commit and test opencommit
 
 test.describe("ButtonLink", ()  => {
   test("button link in the navbar should go to the shop", async({ page, context }) => {
