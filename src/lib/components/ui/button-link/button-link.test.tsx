@@ -21,13 +21,13 @@ test.describe("UI/Button", () => {
     await expect(component).toContainText("Button");
   });
 
-  test("should render button with custom class", async({ mount }) => {
-    const baseClass = "rounded-[50px] text-center transition-all duration-300 cursor-pointer font-magicRetro bg-yellow-500 text-blue-950 px-5 py-2 text-md md:text-xl";
+  //TODO: Debug this
 
+  test("should render button with custom class", async({ mount }) => {
     const component = await mount(
-      <ButtonLink href="" className="custom-class">Button</ButtonLink>
+      <ButtonLink href="https://cuicuitedays.fr" className="custom-class">ButtonLink</ButtonLink>
     );
 
-    await expect(component).toHaveClass("custom-class " + baseClass);
+    await expect(component).toHaveClass("rounded-[50px] text-center transition-all duration-300 cursor-pointer font-magicRetro bg-yellow-500 text-blue-950 px-5 py-2 text-md md:text-xl custom-class");
   });
 });
