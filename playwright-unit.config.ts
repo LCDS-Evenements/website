@@ -1,6 +1,6 @@
 import { defineConfig, devices } from "@playwright/experimental-ct-react";
-import { resolve } from "path";
 import "dotenv/config";
+import { resolve } from "path";
 
 export default defineConfig({
   testMatch: "*.test.tsx",
