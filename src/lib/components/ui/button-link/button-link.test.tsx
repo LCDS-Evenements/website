@@ -21,7 +21,7 @@ test.describe("UI/Button", () => {
     await expect(component).toContainText("Button");
   });
 
-  //TODO: Debug this
+  //TODO: Debug this cause is not working
 
   test("should render button with custom class", async({ mount }) => {
     const component = await mount(
