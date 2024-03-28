@@ -96,5 +96,10 @@ export const sponsors: Sponsor[] = [
     name: "Fauteuil Rouge logo",
     imgPath: "/sponsors/fauteuil-rouge.webp",
     href: "https://lefauteuilrouge.fr/"
+  },
+  {
+    name: "So Shot logo",
+    imgPath: "/sponsors/so-shot.webp",
+    href: "https://www.so-shot.com/"
   }
 ];
