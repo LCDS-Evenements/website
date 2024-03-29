@@ -21,11 +21,11 @@ export const sponsors: Sponsor[] = [
     imgPath: "/sponsors/egdc.webp",
     href: "https://egdc.eu/"
   },
-  // {
-  //   name: "OGS logo",
-  //   imgPath: "/sponsors/ogs.webp",
-  //   href: "https://ogs-securite.com/"
-  // },
+  {
+    name: "OGS logo",
+    imgPath: "/sponsors/ogs.webp",
+    href: "https://ogs-securite.com/"
+  },
   {
     name: "Pavillon du Bocage logo",
     imgPath: "/sponsors/pavillon.webp",
