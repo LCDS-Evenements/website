@@ -101,5 +101,26 @@ export const sponsors: Sponsor[] = [
     name: "So Shot logo",
     imgPath: "/sponsors/so-shot.webp",
     href: "https://www.so-shot.com/"
+  },
+  {
+    name: "EGAL logo",
+    imgPath: "/sponsors/egal.webp",
+    href: "https://egal-nantes.com/"
+  },
+  {
+    name: "Chêne Vert logo",
+    imgPath: "/sponsors/chene-vert.webp",
+    href: "https://www.facebook.com/p/LE-CHENE-VERT-Bressuire-100054211884627/?locale=fr_FR"
+  },
+  {
+    name: "Bowling Bressuire logo",
+    imgPath: "/sponsors/bowling-bressuire.webp",
+    href: "https://bowling-bressuire.fr/"
+  },
+  {
+    name: "Logis Les Baillargères logo",
+    imgPath: "/sponsors/logis-baillargeres.webp",
+    href: "https://www.lelogisdesbaillargeres.com/",
+    className: "rotate-90"
   }
 ];
