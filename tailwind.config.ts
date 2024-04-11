@@ -57,11 +57,16 @@ module.exports = {
       magicRetro: ["Magic Retro", "sans-serif"]
     },
     extend: {
+      animation: {
+        "spin-slow": "spin 5s linear infinite"
+      },
       backgroundImage: {
         blueWaves: "url('/background/blue-wave-bg.svg')",
         whiteWaves: "url('/background/white-wave-bg.svg')"
       }
     }
   },
-  plugins: [require("tailwindcss-animate")]
+  plugins: [
+    require("tailwindcss-animate")
+  ]
 };

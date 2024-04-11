@@ -11,8 +11,8 @@ export const navbarLinks: Links[] = [
     display: true
   },
   {
-    text: "Sponsors",
-    href: "/#sponsors",
+    text: "Merch",
+    href: "/#merch",
     display: true
   },
   {
@@ -21,14 +21,14 @@ export const navbarLinks: Links[] = [
     display: true
   },
   {
-    text: "Aftermovie",
-    href: "/#aftermovie",
+    text: "Sponsors",
+    href: "/#sponsors",
     display: true
   },
   {
-    text: "Merchandising",
-    href: "/#",
-    display: false
+    text: "Aftermovie",
+    href: "/#aftermovie",
+    display: true
   },
   {
     text: "F.A.Q",

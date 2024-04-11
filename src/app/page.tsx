@@ -3,6 +3,7 @@
 import { useEffect, useState, type ReactElement } from "react";
 import HomeSection from "@/lib/sections/home.section";
 import LineUpSection from "@/lib/sections/line-up.section";
+import MerchSection from "@/lib/sections/merch.section";
 import SponsorsSection from "@/lib/sections/sponsors.section";
 import StorySection from "@/lib/sections/story.section";
 import AftermovieSection from "@/lib/sections/aftermovie.section";
@@ -21,8 +22,9 @@ const MainPage = (): ReactElement => {
         <>
           <HomeSection />
           <LineUpSection />
-          <SponsorsSection />
+          <MerchSection />
           <StorySection />
+          <SponsorsSection />
           <AftermovieSection />
         </>
       ) || (

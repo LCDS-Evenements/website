@@ -12,7 +12,7 @@ import { cn } from "@/lib/utils";
 
 export const Footer: Component<FooterProps> = ({ className }) => {
   return (
-    <footer className={cn("w-screen md:h-[45dvh] bg-whiteWaves bg-no-repeat bg-cover bg-center py-10 md:py-16 px-10 md:px-40", className)}>
+    <footer className={cn("w-screen md:h-[45dvh] bg-whiteWaves bg-no-repeat bg-cover bg-center py-10 border-t-4 border-blue-950 md:py-16 px-10 md:px-40", className)}>
       <div className="w-full md:h-full flex flex-col justify-between gap-6 md:gap-0 items-center">
         <div className="w-full md:h-[62%] flex flex-col md:flex-row items-start md:items-center gap-2 md:gap-0 justify-between relative">
           <div>
