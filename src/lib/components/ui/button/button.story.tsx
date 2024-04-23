@@ -32,7 +32,7 @@ const meta: Meta<typeof Button> = {
     },
     onClick: {
       description: "The function to call when the button is clicked",
-      control: "function",
+      control: "Control",
       action: "clicked"
     }
   }
