@@ -18,7 +18,6 @@ const meta: Meta<typeof CustomLink> = {
     },
     onClick: {
       description: "The function to call when the link is clicked",
-      control: "Control",
       action: "clicked"
     }
   }
