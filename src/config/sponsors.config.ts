@@ -122,5 +122,10 @@ export const sponsors: Sponsor[] = [
     imgPath: "/sponsors/logis-baillargeres.webp",
     href: "https://www.lelogisdesbaillargeres.com/",
     className: "rotate-90"
+  },
+  {
+    name: "Logis FreeForm",
+    imgPath: "/sponsors/freeform.webp",
+    href: "https://freeform.fr/"
   }
 ];
