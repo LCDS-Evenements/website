@@ -8,6 +8,8 @@ import SponsorsSection from "@/lib/sections/sponsors.section";
 import StorySection from "@/lib/sections/story.section";
 import AftermovieSection from "@/lib/sections/aftermovie.section";
 import Image from "next/image";
+import HoursSection from "@/lib/sections/hours.section";
+import FAQSection from "@/lib/sections/faq.section";
 
 const MainPage = (): ReactElement => {
   const [isLoaded, setIsLoaded] = useState<boolean>(false);
@@ -22,8 +24,10 @@ const MainPage = (): ReactElement => {
         <>
           <HomeSection />
           <LineUpSection />
-          <MerchSection />
+          <HoursSection />
           <StorySection />
+          <MerchSection />
+          <FAQSection />
           <SponsorsSection />
           <AftermovieSection />
         </>

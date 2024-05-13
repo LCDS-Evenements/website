@@ -11,13 +11,18 @@ export const navbarLinks: Links[] = [
     display: true
   },
   {
-    text: "Merch",
-    href: "/#merch",
+    text: "Horaires",
+    href: "/#hours",
     display: true
   },
   {
     text: "Notre histoire",
     href: "/#story",
+    display: true
+  },
+  {
+    text: "Merch",
+    href: "/#merch",
     display: true
   },
   {
@@ -32,8 +37,8 @@ export const navbarLinks: Links[] = [
   },
   {
     text: "F.A.Q",
-    href: "/#",
-    display: false
+    href: "/#faq",
+    display: true
   },
   {
     text: "Map",

@@ -1,4 +1,7 @@
+/* eslint-disable @typescript-eslint/explicit-function-return-type */
 import { type ClassValue, clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
 
-export const cn = (...inputs: ClassValue[]): string => twMerge(clsx(inputs));
+export function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs));
+}
