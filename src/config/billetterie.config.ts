@@ -1,3 +1,1 @@
-export const billetterieLink = "";
-
-//https://www.helloasso.com/associations/lcds-evenements/evenements/billetterie-pour-le-festival-les-cuicuitedays
+export const billetterieLink = "https://www.helloasso.com/associations/lcds-evenements/evenements/billetterie-pour-le-festival-les-cuicuitedays";
