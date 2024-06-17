@@ -1,1 +1,1 @@
-export const merchLink = "https://www.helloasso.com/associations/lcds-evenements/boutiques/boutique-merch-pour-le-festival-lescuicuitedays";
+export const merchLink = "https://www.helloasso.com/associations/lcds-evenements/boutiques/boutique-merch-pour-le-festival-lescuicuitedays-1";
