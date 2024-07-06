@@ -4,7 +4,7 @@ import { useState, type ReactElement } from "react";
 import { Button } from "@/lib/components/ui/button/button";
 
 const AftermovieSection = (): ReactElement => {
-  const [videoUrl, setVideoUrl] = useState<string>("https://www.youtube.com/embed/B23eCA_GXxU?si=ndkiMthBxff87Vvw");
+  const [videoUrl, setVideoUrl] = useState<string>("https://www.youtube.com/embed/uVFtK7z_2Hg?si=AuFcG_dcYlXUjzhC");
 
   const handleClick = (url: string): void => {
     setVideoUrl(url);
@@ -34,6 +34,12 @@ const AftermovieSection = (): ReactElement => {
         />
       </div>
       <div className="flex items-center justify-center gap-4 mt-10 md:mt-8">
+        <Button
+          onClick={() => void handleClick("https://www.youtube.com/embed/uVFtK7z_2Hg?si=AuFcG_dcYlXUjzhC")}
+          variant="hoverScaleYellow"
+        >
+          Édition 2024
+        </Button>
         <Button
           onClick={() => void handleClick("https://www.youtube.com/embed/B23eCA_GXxU?si=ndkiMthBxff87Vvw")}
           variant="hoverScaleYellow"
